@@ -1,2 +1,2 @@
-C:\Users\Mohit Kumar\AppData\Roaming\npm
-npx create-react-app 01basicapp
+Learning JavaScript 
+
