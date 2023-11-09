@@ -1,3 +1,7 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +39,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h2{
+  background-color: aquamarine;
+  text-align: center;
+  font-size: 35px;
+}
+
+nav ol {
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  height: 5vh;
+  background-color: blueviolet;
+  padding: 1vh;
+  color: white;
+}
+
+nav ol li{
+  list-style: none;
+}
+
+nav ol li a{
+  text-decoration: none;
+  color: white;
 }
