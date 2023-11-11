@@ -8,7 +8,7 @@ function App() {
     //<>
       <h1>Hello world with Mohit Raj salempur kumar  </h1>
     //</>
-  )
+  );
 }
 
 export default App
