@@ -6,7 +6,11 @@ const Navbar = () => {
   return <>
   <nav>
 
-    this is a navbar
+    <div className="container">
+      <li><a href="">Home</a></li>
+      <li><a href="">Home</a></li>
+      <li><a href="">Home</a></li>
+    </div>
   </nav>
 
 
