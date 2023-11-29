@@ -105,25 +105,95 @@
 
 //! If-else statement 
 
-let mode = "light"
-let color;
-if(mode === "dark"){
-  color = "black";
-} else {
-  color = "white";
+// let mode = "light"
+// let color;
+// if(mode === "dark"){
+//   color = "black";
+// } else {
+//   color = "white";
+// }
+//   console.log(color);
+
+
+//   //* 2nd Example 
+
+// let age = 16;
+
+// if(age>= 18){
+//   console.log("vote");
+// } else {
+//   console.log("not vote ");
+// }
+
+// //* Define number is odd or even 
+
+// let num = 21;
+
+// if (num % 2 ===0){
+//   console.log(num, "is even");
+// }
+// else {
+//   console.log(num, "is odd");
+// }
+
+//! else-if Statement 
+
+// let mode = "blue";
+// let color;
+
+// if (mode === "dark"){
+//   color = "black";
+// } else if (mode === "blue"){
+//   color = "blue";
+// } else if (mode === "pink"){
+//   color = "pink"
+// } else {
+//   color = "white"
+// }
+
+// console.log(color);
+
+
+//! Ternary Operator 
+
+// let age = 25;
+
+// let result = age >= 18 ? "adult" : "not adult" ; 
+
+// console.log(result);
+
+
+//! Let Practice  Q1 
+
+// let name = prompt("hello");
+// console.log(name);
+
+// let num = prompt ("enter a number");
+
+// if (num % 5 === 0) {
+//   console.log(num, "num is multiple of 5");
+// } else {
+//   console.log(num, "Num is not multiple by 5 ");
+// }
+
+//! Q - 2
+
+let Score = prompt("Enter your Score under 1 - 100");
+let grade;
+
+       if (Score >= 90 && Score <= 100) {
+  grade = "A";
+} else if (Score >= 70 && Score <= 89){
+  grade = "B";
+} else if (Score >= 60 && Score <= 69){
+  grade = "C"
+} else if (Score >= 50 && Score <= 59){
+  grade = "D"
+} else if (Score >= 0 && Score <= 49){
+  grade = "E"
 }
-  console.log(color);
 
-
-  //* 2nd Example 
-
-let age = 16;
-
-if(age>= 18){
-  console.log("vote");
-} else {
-  console.log("not vote ");
-}
+console.log(grade);
 
 
 
