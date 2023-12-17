@@ -1,9 +1,3 @@
-//alert("hello world")
-
-// console.log(window);
-
-//  document.body.style.background = "Red"
-
 // Get input from the user
 let num1 = parseFloat(prompt("Enter the first number:"));
 let num2 = parseFloat(prompt("Enter the second number:"));
