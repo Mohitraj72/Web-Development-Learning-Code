@@ -1,5 +1,4 @@
-//! Loops In JS 
-
+//! Loops In JS
 
 // for (let count = 1; count <=5; count++) {
 //   console.log("Apna College ");
@@ -15,15 +14,14 @@
 
 // console.log(sum);
 
+//! Infinite Loops
 
-//! Infinite Loops 
-
-//* Infinite loops : A Loop that never ends 
+//* Infinite loops : A Loop that never ends
 
 //for (let i = 1; i >= 0; i++){
 // console.log("i", i ); }
 
-//! While Loop 
+//! While Loop
 
 // let i = 1 ;
 // while (i <= 10 ){
@@ -38,19 +36,18 @@
 //   i++;
 // } While (i <= 5);
 
-
-//! For of Loop 
+//! For of Loop
 
 // let str = "Javascript";
 // let size = 0;
 
-// for (let val of str){   //iterator 
+// for (let val of str){   //iterator
 //   console.log("val ", val );
 //   size ++;
 // }
 // console.log("String Siz = ", size );
 
-//! For in Loops 
+//! For in Loops
 
 // let student = {
 //   name: "Mohit Raj ",
@@ -61,14 +58,14 @@
 
 // for (let i in student){
 //   console.log(i);
-//}    // this returnss us keyvalue > name, age, maeks, isPass 
+//}    // this returnss us keyvalue > name, age, maeks, isPass
 
 //! Let's Practice Q1
 
 // for (let num = 0; num <=100; num++){
 //   if (num%2 ===0) {
 //     console.log("num=", num);
-//   } 
+//   }
 // }
 
 //! Q2
@@ -83,20 +80,18 @@
 
 // console.log("Congrates:" );
 
-
-//! Strings in Js 
+//! Strings in Js
 
 // let str = "mohit Raj"
 
 // console.log(str[2]);
 
-// Template Literate 
+// Template Literate
 // let sentence = ` This is a Special String`;
 
 // console.log(typeof sentence);
 
-//! Template in JS 
-
+//! Template in JS
 
 // let obj = {
 //   item : "pen",
@@ -107,26 +102,25 @@
 
 // console.log(output);
 
-//! String Methods in JS 
+//! String Methods in JS
 
-let str = "Mohit Raj"
+let str = "Mohit Raj";
 str = str.toUpperCase();
 console.log(str);
 str = str.toLowerCase();
 console.log(str);
 
-
 {
-let num = "   Mohit   Raj"
-num = num.trim();
-console.log(num); }
-
+  let num = "   Mohit   Raj";
+  num = num.trim();
+  console.log(num);
+}
 
 {
   let str = "012345678";
-  let lett = "Mohit Raj"
-  console.log(str.slice(1,5));
-  console.log(lett.slice(0,5));
+  let lett = "Mohit Raj";
+  console.log(str.slice(1, 5));
+  console.log(lett.slice(0, 5));
   console.log(lett.slice(0));
 }
 
@@ -143,16 +137,15 @@ console.log(num); }
 }
 
 {
-  let str  = "mohit";
+  let str = "mohit";
 
   console.log(str.charAt(3));
   console.log(str[0]);
 }
 
-
 //! Practice Q
 {
   let fullname = prompt("enter your fullname ");
-  let username = "@" + fullname
+  let username = "@" + fullname;
   console.log(username);
 }
