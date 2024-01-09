@@ -26,13 +26,31 @@
 // sum(123 , 23);
 
 
-function sum (x,y){
-  s= x+y;
-  console.log(x);
-  return s;
+// function sum (x,y){
+//   s= x+y;
+//   console.log(x);
+//   return s;
 
+// }
+
+// let val = sum (3,4);
+// console.log(x);
+// console.log(val);
+
+
+
+//! Q1.  Create a function using the “function” keyword that takes a String as an argument & returns the number of vowels in the string.
+
+function countVowels (str) {
+  let count = o;
+  for(const char of str ){
+    
+      if (char ==="a" || char ==="e" || char === "i" || char==="o" || char === "u"){
+        count++;
+      
+    }
+  }
+  return count;
 }
 
-let val = sum (3,4);
-console.log(x);
-console.log(val);
+

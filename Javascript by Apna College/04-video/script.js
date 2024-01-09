@@ -1,6 +1,8 @@
+//console.clear()
+
 //! Arrays in JS
 
-// let array = ["mohit", "nikhil", "lalu", "kajal"]
+//let array = ["mohit", "nikhil", "lalu", "kajal"]
 
 // console.log(array);
 
@@ -47,10 +49,9 @@
 //   i++;
 // }
 
+//! Arrays Methods
 
-//! Arrays Methods 
-
-//* Push Array 
+//* Push Array
 
 // let items = ["Laptop", "gadget", "mobile", "mouse"];
 
@@ -58,21 +59,23 @@
 
 // console.log(items);
 
-//* Pop Array 
+//* Pop Array
 // let items = ["Laptop", "gadget", "mobile", "mouse"];
 
-// items.pop();
+// let iterm = items.pop();
 
 // console.log(items);
+// console.log("deleted",iterm );
 
-
-//* Tostring 
+//* Tostring
 // let items = ["Laptop", "gadget", "mobile", "mouse"];
+// const num = [78,79,45,23,45];
+// console.log(num.toString());
 
-// console.log(items);
-// console.log(items.toString());
+//console.log(items);
+//console.log(items.toString());
 
-//* Conccat Array 
+//* Conccat Array
 
 // let marvel = ["hero", "mohit", "spiderman"];
 
@@ -83,27 +86,40 @@
 
 // console.log(news);
 
-
 //* Unshift Number (add in the start )
 
 // let heros = ["thor", "spider", "iron"];
 
 // let val = heros.shift();
 // console.log("deleted", val);
+// console.log(heros);
 
-//* Slice in Array 
+//* shift in Array
+// let num = [45,67,89,34,11];
 
-let heros = ["thor", "spider", "iron"]; 
+// console.log(num.shift());
+// console.log(num);
 
-console.log(heros);
+//* Slice in Array
 
-console.log(heros.slice(1,3));
+// let heros = ["thor", "spider", "iron"];
 
-//* Splice Array 
+// console.log(heros.slice(1,2));
+
+// let num = [42,34,67,89,22];
+// console.log(num.slice(1));
+
+//* Splice Array
 {
+  // let arr = [1, 2, 3, 4, 5, 6, 7];
 
-  let arr = [1,2,3,4,5,6,7];
+  // Add Element
+  // console.log(arr);
+  //arr.splice(2, 0, 101);
 
-  console.log(arr);
-  arr.splice(2, 0, 101);
+  // Delete element
+   //arr.splice(3,1);
+
+  //Replace Element
+  //  arr.splice(3,1,101);
 }
