@@ -2,17 +2,35 @@
 
 // console.log(window);
 
-//  document.body.style.background = "Red"
+ //document.body.style.background = "Red"
 
-// Get input from the user
-let num1 = parseFloat(prompt("Enter the first number:"));
-let num2 = parseFloat(prompt("Enter the second number:"));
+ //document.body.childNodes[3].innerText = "abcd"
 
-// Compare the two numbers and print the greater one
-if (num1 > num2) {
-    console.log("The greatest number is: " + num1);
-} else if (num2 > num1) {
-    console.log("The greatest number is: " + num2);
-} else {
-    console.log("The numbers are equal.");
-}
+ //! Selecting with Id 
+
+//  let h1 = document.getElementById("heading"); 
+//  console.log(h1);
+
+//! Selecting with class
+
+// let head = document.getElementsByClassName("header")
+// console.log(head);
+
+//! Selecting wuth tag
+
+// let tag = document.getElementsByTagName("p");
+// console.log(tag);
+
+//! Query Selector 
+
+// let element = document.querySelector("p");
+// console.dir(element);
+
+// let elements = document.querySelectorAll("p");
+// console.dir(elements);
+
+//! Properties 
+
+
+
+

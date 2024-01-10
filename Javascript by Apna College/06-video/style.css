@@ -1,5 +1,5 @@
 h2{
-  color: #fdfdfd;
+  color: #00ff4c;
 }
  
 body{
@@ -11,4 +11,6 @@ button{
   border: none;
   border-radius: 10%;
   padding: 10px;
+  justify-content: center;
+  
 }

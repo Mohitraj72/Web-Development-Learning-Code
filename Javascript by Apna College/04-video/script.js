@@ -22,6 +22,7 @@
 //* For Of
 // for (let arra of array){
 //   console.log(array);
+
 // }
 
 //! Q1 Practice
@@ -123,3 +124,46 @@
   //Replace Element
   //  arr.splice(3,1,101);
 }
+
+//* For each Loops 
+
+// let arr = ["Delhi", "Pune"];
+
+// arr.forEach(function printval(val){
+//   console.log(val);
+// });
+
+// arr.forEach((val, idx, arr) =>{
+//   console.log(val.toUpperCase(), idx, arr);
+// });
+
+
+//! Qs. For a given array of numbers, print the square of each value using the forEach loop.
+
+// let nums = [67, 52, 39];
+
+// let calcSquare = (nums) => {
+//   console.log(nums*nums);
+// }
+// nums.forEach(calcSquare);
+
+//! Map Array Method 
+
+// let nums = [78,45,96,1,79];
+
+// nums.map((val)=> {
+//   console.log(val);
+// });
+
+//! Filter array Method 
+// let arr = [1,2,3,4,5,6,7,8,9];
+
+// let evenarr = arr.filter((val)=> {
+//   return val% 2===0;
+// })
+
+// console.log(evenarr);
+
+//! Reduce Array Method 
+
+
