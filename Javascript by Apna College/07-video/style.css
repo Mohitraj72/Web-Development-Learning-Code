@@ -14,4 +14,5 @@ div{
   border-radius: 10%;
   border: solid 2px black;
   cursor: pointer;
+  transition-duration: 200ms;
 }
