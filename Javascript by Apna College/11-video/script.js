@@ -21,6 +21,11 @@
 
 // Karan.__proto__= employee;
 
-let arr = ["Harry", "Mohit"];
+//let arr = ["Lalu", "Mohit"];
 
-console.table(arr);
+let a = 4;
+let b = 6;
+let ans = a+b;
+
+console.table(ans);
+
