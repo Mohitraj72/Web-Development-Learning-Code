@@ -15,5 +15,5 @@ console.log(accountId);
 
 /* Prefer not to use var because of issue in block scope and functional acope */
 
-const.table([accountId, accountEmail, accountPassword, accountCity, accountstate])
+console.table([accountId, accountEmail, accountPassword, accountCity, accountstate])
 
