@@ -39,3 +39,26 @@ const myFunction = function() {
 console.log(typeof bigNumber);
 console.log(typeof outsideTemp);
 console.log(typeof anotherId);
+
+
+
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "Moht raj ";
+let anothername = myYoutubename 
+anothername = "Mohit Kumar"
+console.log(myYoutubename);
+console.log(anothername);
+
+let user = {
+    email : "User@gmail.com"
+    //upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "mohit@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
