@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operators </title>
-</head>
-<body>
+  <head>
+   
+    <title>Operators</title>
+  </head>
+  <body>
     <h1 id="add"></h1>
     <h1 id="Sub"></h1>
     <h1 id="Mul"></h1>
     <h1 id="com"></h1>
-    
+    <h1 id="Log"></h1>
+    <h1 id="Ass"></h1>
+
     <script>
-        // Addition 
-         var x = 5;
-         var y = 6;
-         var z = x + y;
-         document.getElementById("add").innerHTML = z;
+      // Addition
+      var x = 5;
+      var y = 6;
+      var z = x + y;
+      document.getElementById("add").innerHTML = z;
 
-         // Subtraction
-         var x = 8;
-         var y = 6;
-         var z = x - y;
-         document.getElementById("Sub").innerHTML = z;
+      // Subtraction
+      var x = 8;
+      var y = 6;
+      var z = x - y;
+      document.getElementById("Sub").innerHTML = z;
 
-         // Multiplication
-         var x = 8;
-         var y = 6;
-         var z = x * y;
-         document.getElementById("Mul").innerHTML = z;
+      // Multiplication
+      var x = 8;
+      var y = 6;
+      var z = x * y;
+      document.getElementById("Mul").innerHTML = z;
 
-         //Cmparison Operator 
-         var x = 8;
-         var y = 8;
-         var z = x >= y;
-         document.getElementById("com").innerHTML = z;
+      // Comparison Operator
+      var x = 8;
+      var y = 8;
+      var z = x >= y;
+      document.getElementById("com").innerHTML = z;
+
+      // Logicial Operator 
+      var x = true;
+      var y = false;
+      var z = x && y;
+      document.getElementById("Log").innerHTML = z;
+
+      // Assignment  Operator 
+      var a = 5;
+      var z = 6;
+       z += a;
+      document.getElementById("Ass").innerHTML = z;
 
 
     </script>
-</body>
+  </body>
 </html>
