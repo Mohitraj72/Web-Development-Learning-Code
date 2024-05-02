@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function</title>
+  </head>
+  <body>
+    <input type="text" name="name" id="name" />
+    <button onclick="greet()">Button</button>
+    <div class="greet"></div>
+
+    <script>
+      function greet() {
+        var name = document.getElementById("name").value;
+        var string = "Hello " + name;
+        //console.log(string);
+        document.getElementsByClassName("greet")[0].innerHTML = string;
+      }
+    </script>
+  </body>
+</html>
