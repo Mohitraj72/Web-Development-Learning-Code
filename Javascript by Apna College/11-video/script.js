@@ -21,11 +21,34 @@
 
 // Karan.__proto__= employee;
 
-//let arr = ["Lalu", "Mohit"];
+// class ToyotaCar {
+//     constructor(){
+//         console.log("Creating New objects");
+//         this.brand = brand;
+//         this.mileage = mileage;
+//     }
+    
+//     start() {
+//         console.log("Start");
+//     }
+//     stop() {
+//         console.log("Stop");
+//     }
+// }
 
-let a = 4;
-let b = 6;
-let ans = a+b;
+// let fortuner = new ToyotaCar("fortuner", 10);
+// fortuner.setBrand (fortuner);
+// let Lexus = new ToyotaCar("lexus", 12);
+// Lexus.setBrand (Lexus);
 
-console.table(ans);
+class Parent{
+    hello(){
+        console.log("Hello");
+    }
+}
+
+class Child extends Parent{
+}
+
+let obj = new Child ();
 
