@@ -5,10 +5,18 @@
 <body>
     <script>
         var age = prompt("Enter Your Age Here");
-        if(age>=18){
+        // if(age>=18){
+        //     document.write("<h1>Yes you can vote Now <h1>")
+        // } else {
+        //     document.write("<h1> NO you cannot vote <h1>")
+        // }
+
+        if(age >= 18) {
             document.write("<h1>Yes you can vote Now <h1>")
+        } else if (age == 17) {
+            document.write("<h1> Wait for one more Year <h1>")
         } else {
-            document.write("<h1> NO you cannot vote <h1>")
+            document.write("<h1>No you cannot vote Now <h1>")
         }
     </script>
 </body>
