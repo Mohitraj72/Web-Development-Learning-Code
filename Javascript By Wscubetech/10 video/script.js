@@ -39,6 +39,28 @@
 //     console.log(i);
 // }
 
+//! Switch Case in Javascript 
+var i = 5;
+switch (i) {
+    case 1:
+        console.log("i is eqquals to 1");
+        break;
+    case 2:
+        console.log("i is eqquals to 2");
+        break;
+    case 3:
+        console.log("i is eqquals to 3");
+        break;
+    case 4:
+        console.log("i is eqquals to 4");
+        break;
+    case 5:
+        console.log("i is eqquals to 5");
+        break;
+    default:
+        console.log("i is great");
+        break;
 
+}
 
 
