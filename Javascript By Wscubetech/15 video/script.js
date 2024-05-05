@@ -14,5 +14,24 @@ function unmodify() {
 }
 
 //! clear timeout Method 
+var my;
+var name = "Welcome Mohit Raj";
+function start() {
+    my = setTimeout(function () {
+        document.getElementById("nam").innerText = name;
+    },
+        5000);
 
+    //! also we call this thing 👇
+    document.getElementById('nam').style.backgroundColor = "aqua";
+
+}
+
+function stop() {
+    clearTimeout(my);
+    alert("Timeout Stop");
+}
+
+
+//! ClearInterval Method ❤️
 
