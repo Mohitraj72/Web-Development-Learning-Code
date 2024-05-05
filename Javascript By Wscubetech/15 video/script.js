@@ -35,3 +35,13 @@ function stop() {
 
 //! ClearInterval Method ❤️
 
+var timer = setInterval(count,500);
+var c = 0;
+function count(){
+    document.getElementById('time').innerText = c;
+    c++;
+}
+
+function stoper() {
+    clearInterval(timer);
+}
