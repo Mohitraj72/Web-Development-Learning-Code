@@ -14,18 +14,34 @@ function remove (elem){
 
 }
 
-//! EventListner in JavaScript 😍😍
+//! addEventListner in JavaScript 😍😍
 var i = 0;
-document.getElementById('btn').addEventListener("click", function() {
-    document.getElementById('counter').innerText = i;
-    i++; // increment the counter
-});
-document.getElementById('btn').addEventListener("mouseenter",colorchange);
+document.getElementById('btn').addEventListener("click", counter);
 
-function colorchange () {
-    document.getElementById('counter').style.background = "red";
+function counter (){
+    document.getElementById('counter').innerText = i;
+    i++; 
+}
+document.getElementById('btn').addEventListener("mouseenter",colorred);
+
+function colorred () {
+    document.getElementById('counter').style.color = "red";
 }
 
-document.getElementById('btn').addEventListener("mouseleave",function(){
-    document.getElementById('btn').style.color = 'white';
-});
+document.getElementById('btn').addEventListener("mouseleave",colorblack);
+
+function colorblack () {
+    document.getElementById('counter').style.color = "black";
+}
+
+//! RemoveEventListner in JS 😊⚡
+
+function stop (){
+    document.getElementById('btn').removeEventListener("click",counter);
+}
+document.getElementById('btn').removeEventListener("mouseenter",colorreds);
+
+function colorreds () {
+    document.getElementById('counter').style.color = " ";
+}
+
