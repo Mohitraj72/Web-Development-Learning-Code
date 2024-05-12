@@ -33,8 +33,30 @@ const obj4 = {5: "c", 6: "d"}
 // const obj3 = Object.assign({}, obj1, obj2,obj4)
 
 const obj3 = {...obj1,...obj2,...obj4}
-console.table(obj3);
+// console.table(obj3);
 
-const users = {
-    
-}
+const users = [
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 2,
+        email: "h@gmail.com"
+    },
+    {
+        id: 3,
+        email: "h@gmail.com"
+    }
+]
+
+users[1].email
+// console.log(tinderuser);
+
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.entries(tinderuser));
+
+// console.log(tinderuser.hasOwnProperty('isLogged'));
+
+
