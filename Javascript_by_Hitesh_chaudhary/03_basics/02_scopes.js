@@ -23,4 +23,30 @@ function one (){
     two()
 }
 
-one()
+// one() 
+
+if (true){
+    const username = "Mohit Raj"
+    if(username === "Mohit Raj"){
+        const website = " youtube"
+        // console.log(username + website);
+    }
+    // console.log(website); ⚡
+}
+// console.log(username);  ⚡
+
+
+//! ------------------ Interesting ------------// 
+
+function addone(num){
+    return num + 1
+}
+addone(5) 
+
+
+
+const addTwo = function(num){
+    return num + 2
+}
+
+addTwo(5)
