@@ -1,8 +1,8 @@
 //! For 
 
-for (let index = 0; index < 10; index++) {
-    const element = index;
+for (let i = 0; i <= 10; i++) {
+    const element = i;
     console.log(element);
     
 }
-
+console.log(element);
