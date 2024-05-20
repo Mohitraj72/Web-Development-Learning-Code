@@ -8,17 +8,17 @@ yt Channel - https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4
 Videos Completed -
 01 - 05 (0 oct 2023)
 
-10 -  completed (27 april 2024)
-12 completed (11 April)
-17 completed (12 April 2024)
-17 completed (12 April 2024)
-20 completed (13 April 2024)
-21 completed (15 April 2024)
-22 completed (15 April 2024)
-23 completed (15 April 2024)
-24 completed (15 April 2024)
-25 completed (15 April 2024)
-26 completed (20 April 2024)
+10 -  completed (27 april 2024)   <br/>
+12 completed (11 April)             <br/>
+17 completed (12 April 2024)  <br/>
+17 completed (12 April 2024)  <br/>
+20 completed (13 April 2024)  <br/>
+21 completed (15 April 2024)  <br/>
+22 completed (15 April 2024)  <br/>
+23 completed (15 April 2024)  <br/>
+24 completed (15 April 2024)  <br/>
+25 completed (15 April 2024)  <br/>
+26 completed (20 April 2024)  <br/>
 
 
 
