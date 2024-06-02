@@ -1,0 +1,44 @@
+.html{
+    color: red;
+}
+
+.css{
+    color: blue;
+}
+
+.java{
+    color: yellow;
+}
+
+.react{
+    color: aqua;
+}
+
+body{
+    background-color: #393939;
+    color: white;
+}
+
+#para{
+    color: #e2b82f;
+}
+
+#h3{
+    color: #f1d217;
+}
+
+
+[class]{
+    background-color: aqua;
+
+}
+
+mohit{
+    background-color: #f1d217;
+}
+p{
+    transition-duration: 500ms;
+}
+p:hover{
+    background-color: aqua;
+}
