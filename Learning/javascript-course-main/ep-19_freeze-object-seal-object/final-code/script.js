@@ -1,4 +1,5 @@
-let username = 'Anurag'
+let username = 'Lala';
+username = "mohit";
 
 const user = {
   firstName: 'Adarsh',

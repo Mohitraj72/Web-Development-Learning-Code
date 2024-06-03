@@ -1,7 +1,7 @@
 const username = prompt('Please Enter Your Name.');
 const userAge = parseInt(prompt('Please Enter Your Age.'));
 
-debugger
+// debugger
 console.log(`Name: ${username}`);
 console.log(`Age: ${userAge}`);
 

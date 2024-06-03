@@ -4,3 +4,6 @@ const fruitsCollection = ['Apple', 'Banana', 'Grapes', 'Dates']
 
 const newObject = {}
 const newArray = []
+ 
+
+document.write(fruitsCollection)

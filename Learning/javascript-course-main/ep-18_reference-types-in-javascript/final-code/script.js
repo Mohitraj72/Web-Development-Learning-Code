@@ -1,23 +1,29 @@
-const myName = 'Anurag'
+const myName = 'Mohit'
 
 const username1 = ''
 const username2 = ''
 
-const user1 = {
-    firstName: 'Akash'
-}
+// const user1 = {
+//     firstName: 'Mohit',
+//     lastName: 'Kumar'
+// }
+
+// console.log(user1.firstName);
+// console.log(user1.lastName);
 
 
 // const user2 = {
-//     firstName: 'Adarsh',
+//     firstName: 'Lalu',
 //     'last-Name': 'Singh',
-//     Anurag: 'Developer'
+//     Mohit: 'Developer', 
+//     Age : 18
 // }
 
-// console.log(user2.firstName);
+// console.table(user2);
+// console.table(user2.Age);
 // console.log(user2["last-Name"]);
 // console.log(user2[myName]);
-// console.log(user2["first" + "Name"]);
+// console.log(user2["first" + "Name"]); 
 
 const user2 = {
     firstName: 'Adarsh',
@@ -27,11 +33,11 @@ const user2 = {
         pinCode: 876876,
         state: 'Karnataka',
         moreDetails: {
-            population: 9798897897,
+            population: 979889,
             area: '787 sq km',
         }
-    }
+    } 
 }
 
-// user2.age = 26
-// user2["is-student"] = true
+user2.age = 26
+user2["is-student"] = true
