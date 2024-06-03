@@ -1,11 +1,15 @@
 const message = 'Hello World!'
-const faltuMessage = '     Hi, I am Anurag.     '
+console.log(message[4]);
+console.log(message.length);
+
+
+const faltuMessage = '     Hi, I am Mohit.     '
 const finalMessage = faltuMessage.trim()
 const finalMessageLowerCase = faltuMessage.trim().toLocaleLowerCase()
 const replacedMessage = finalMessage.replace('Hi', 'Hello')
 
 const lastFourDigits = '9996'
-const maskedAccountNumber = lastFourDigits.padStart(16, '*')
+const maskedAccountNumber = lastFourDigits.padStart(10, '*')
 
 const capitalMessage = message.toUpperCase()
 const bankBalance = 9873
