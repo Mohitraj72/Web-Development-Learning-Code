@@ -9,3 +9,8 @@ const ticTacToe = [
     [null, null, 'O'],
     ['O', null, 'X']
 ]
+
+console.table(nameAndNumberList);
+console.table(ticTacToe);
+
+

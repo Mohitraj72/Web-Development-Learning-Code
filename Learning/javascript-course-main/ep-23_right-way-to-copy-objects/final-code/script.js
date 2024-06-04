@@ -4,20 +4,21 @@
 
 const fruits = ['Mango', 'Apple', 'Orange']
 
-// const myFruits = fruits
+const myFruits = fruits
 
-// myFruits.push('Dates')
-// myFruits.push('Grapes')
+myFruits.push('Dates')
+myFruits.push('Grapes')
+console.table(myFruits);
 
 // Object.assign(myFruits, fruits)
-const myFruits = [...fruits]
+// const myFruits = [...fruits]
 
 // const myFruits = [].concat(fruits)
 // const myFruits = fruits.slice()
 
 const user1 = {
-  firstName: 'Anurag',
-  lastName: 'Singh',
+  firstName: 'Mohit',
+  lastName: 'Raj',
   pata: {
     city: 'Delhi',
     pincode: 989888,

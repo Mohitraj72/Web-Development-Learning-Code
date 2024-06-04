@@ -13,4 +13,5 @@ const maths = {
     return num ** 3
   }
 }
+maths()
 

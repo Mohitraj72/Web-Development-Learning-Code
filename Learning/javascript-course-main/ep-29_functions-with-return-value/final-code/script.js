@@ -4,6 +4,6 @@ debugger
     return a + b
 }
 
-// const result = addTwoNumbers(56, 6)
+const result = addTwoNumbers(56, 4)
 
-// console.log(result);
+console.log(result);

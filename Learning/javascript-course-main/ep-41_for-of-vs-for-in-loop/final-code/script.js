@@ -6,6 +6,9 @@ const fruits = ['banana', 'apple', 'peach', 'mango', 'grapes']
 
 // console.log('*************************');
 
+
+//For Of Loop ❤️
+
 // for(const fruit of fruits) {
 //     console.log(fruit);
 // }
@@ -17,6 +20,8 @@ const fruits = ['banana', 'apple', 'peach', 'mango', 'grapes']
 //     console.log(letter);
 // }
 
+
+//For in Loop ❤️
 const person = {
     firstName: 'John',
     lastName: 'Doe',
@@ -32,8 +37,9 @@ const person = {
 const personKeys = Object.keys(person)
 const personValues = Object.values(person)
 const personEntries = Object.entries(person)
-// for (const key of personKeys) {
-//     console.log(person[key]);
-// }
+
+for (const key of personKeys) {
+    console.log(person[key]);
+}
 
 

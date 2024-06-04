@@ -1,8 +1,8 @@
 // debugger
 
 console.log(a)
-
 var a = 'Anurag'
+
 
 hi()
 
