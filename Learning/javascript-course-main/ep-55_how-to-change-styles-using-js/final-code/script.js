@@ -7,7 +7,8 @@ const allLinks = document.querySelectorAll('a')
 // paragraph.innerHTML = '<h4>Hiii</h4>'
 
 h1.style.color = 'hotpink'
-h1.style.backgroundColor = 'skyblue'
+h1.style.backgroundColor = 'black'
+
 
 // for (let i = 0; i < allLinks.length; i++) {
 //   allLinks[i].style.color = 'teal'
