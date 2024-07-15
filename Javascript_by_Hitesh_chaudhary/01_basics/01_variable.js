@@ -7,7 +7,7 @@ accountCity = "Bihar"
 accountId = 2 not allowed
 */
 
-accountEmail = "hc@hc.com"
+accountEmail = "mohit@.com"
 accountPassword = "21212121"
 accountCity = "Bengaluru"
 
