@@ -39,7 +39,7 @@ let negvalue = -value
 // console.log(2/3);
 // console.log(2%2);
 
-let str1 = "hello"
+let str1 = "hello "
 let str2 = "Mohit"
 
 let str3 = str1 + str2
@@ -62,6 +62,21 @@ num1 = num2 = num3 = 2+2
 let GameCounter = 100
 GameCounter++;
 console.log(GameCounter);
+
+
+let GameCounter1 = 100
+++GameCounter1;
+console.log(GameCounter1);
+
+
+let GameCounter2 = 100
+GameCounter2--;
+console.log(GameCounter2);
+
+
+let GameCounter3 = 100
+--GameCounter3;
+console.log(GameCounter3);
 
 
 
