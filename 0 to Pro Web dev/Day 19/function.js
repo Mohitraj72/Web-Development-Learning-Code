@@ -32,3 +32,12 @@ function sum (a,b){
 
 sum(4,5);
 sum(10,45);
+
+
+// ! Return keyword in JS 
+function sums (a,b){
+    return a+b;
+}
+
+console.log(sums(4,5));
+
