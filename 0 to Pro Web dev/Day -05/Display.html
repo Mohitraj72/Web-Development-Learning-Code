@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    
-</style>
-<body>
-    
-</body>
+  </head>
+  <style>
+    p {
+      display: inline-block;
+      background-color: blueviolet;
+      height: 20px;
+      width: 100px;
+    }
+
+    .container1 {
+      width: 100px;
+      height: 200px;
+      background-color: yellow;
+    }
+    .container2 {
+      width: 200px;
+      height: 100px;
+      background-color: rgb(223, 34, 144);
+      /* position: absolute; */
+    }
+    .container3 {
+      position: absolute;
+      left: 20%;
+      top: 50%;
+      width: 120px;
+      height: 150px;
+      background-color: rgb(72, 255, 0);
+    }
+
+    .box {
+      position: relative;
+      background-color: red;
+      height: 500px;
+      width: 500px;
+      background-image: url(https://m.media-amazon.com/images/I/31h2TLelvJL._SX300_SY300_QL70_FMwebp_.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .cube {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: aqua;
+      height: 50px;
+      width: 50px;
+      background: linear-gradient(to right bottom, #6e682e, #ffff00);
+    }
+  </style>
+  <body>
+    <h2>Display Property: Absolute</h2>
+    <p>123</p>
+    <p>1500</p>
+
+    <h2>Postion Property</h2>
+
+    <div class="container1"></div>
+    <div class="container2"></div>
+    <div class="container3"></div>
+
+    <h2>Postion property: relative</h2>
+    <div class="box">
+      <div class="cube"></div>
+    </div>
+  </body>
 </html>
