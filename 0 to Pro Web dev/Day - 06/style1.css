@@ -1,0 +1,32 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: lightskyblue;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+
+    /* align-items: center;
+    justify-items: center; */
+    
+}
+
+.elem{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 2px solid black;
+}
