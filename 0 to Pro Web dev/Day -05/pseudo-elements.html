@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      position: relative;
+      width: fit-content;
+    }
+    p::before {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 3px;
+      background-color: red;
+    }
+
+    h1::first-line {
+      color: rebeccapurple;
+    }
+
+    h1::first-letter{
+        font-size: 50px;
+    }
+    h1::selection{
+        color: green;
+        
+    }
+
+  </style>
+  <body>
+    <h2>Pseudo Elements</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, earum!
+    </h1>
+  </body>
+</html>

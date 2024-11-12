@@ -17,6 +17,17 @@ position
 background
 flex
 pseudo-elements
+  : : bef011
+  : : after
+  : : first-line
+  : : first-letter
+  : : selection
 pseudo-classes
+  : hover
+  : active
+  : focus
+  :nth-child(n)
+
+  
 animation
 media queries

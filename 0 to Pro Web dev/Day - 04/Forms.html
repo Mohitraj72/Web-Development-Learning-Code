@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-        
-</body>
+  </head>
+  <body>
+    <form action="/submit">
+      <div>
+        <label for="Username">
+          Username:
+          <input type="text" placeholder="Enter name" id="Username" name="Username"/>
+        </label>
+      </div>
+      <br />
+      <div>
+        <label for="password">
+          password:
+          <input type="password" id="password" placeholder="password" name="Username"/>
+        </label>
+      </div>
+      <div>
+        <label for="age">
+          Enter Age:
+          <input type="number" id="age" placeholder="age" />
+        </label>
+      </div>
+      <button>
+        Submit
+      </button>
+    </form>
+  </body>
 </html>
