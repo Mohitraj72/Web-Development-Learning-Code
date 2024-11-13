@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    #main {
+      height: 100%;
+      width: 100%;
+      background-color: #eee8e9;
+      display: grid;
+      grid-template-columns: 25% 25% 50%;
+      grid-template-rows: 26% 56% 18%; 
+    }
+
+    #left-top-left {
+      background-color: #ff00aa;
+      padding: 40px;
+    }
+
+    #square {
+      width: 25px;
+      height: 25px;
+      rotate: 45deg;
+      background-color: #000000;
+    }
+
+    #left-top-right {
+      background-color: #78989b;
+      justify-self: right;
+      padding: 25px;
+      text-align: right;
+      align-self: center;
+    }
+
+    #left-top-right h4 {
+      background-color: red;
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    #left-top-right h5 {
+      font-size: 13px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    #left-center {
+      background-color: #00ffc8;
+      grid-column: 1/3;
+      padding: 35px;
+    }
+
+    #left-center h1 {
+      font-size: 6vw;
+      text-transform: uppercase;
+      line-height: 5vw;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #left-center h1:nth-child(2n) {
+      background-color: red;
+      text-align: center;
+    }
+
+    #left-bottom {
+      background-color: #ff00aa;
+      grid-column: 1/3;
+      padding: 10px;
+      /* overflow: hidden; */
+    }
+
+    #left-bottom p {
+      width: 80%;
+      font-size: 12px;
+      font-weight: 500;
+      color: #666;
+
+      
+    }
+
+    #right {
+      background-color: #51ff00;
+      grid-column: 3;
+      grid-row: 1/4;
+      padding: 40px;
+      padding-right: 120px;
+    }
+
+    #right video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+
+    #arrow{
+      position: absolute;
+      top: 50%;
+      left: 52.5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: orange;
+      padding: 20px;
+      border-radius: 50%;
+      color: azure;
+      transform: translate(-50%,-50%);
+
+    }
+
+    #arrow i{
+      font-size: 30px;
+      font-weight: 100;
+    }
+
+    /* Making responsive from the here  */
+
+    @media (max-width: 600px) { 
+      #main {
+      height: 100;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50 50%;
+      grid-template-rows: 60px 30% 10%; 
+    }
+
+    #right {
+      background-color: #51ff00;
+      grid-column: 1/2;
+      grid-row: 4;
+      padding: 20px;
+      padding-right: 120px;
+    }
+    }
+
+  </style>
+  <body>
+    <div id="main">
+      <div id="left-top-left">
+        <div id="square"></div>
+      </div>
+      <div id="left-top-right">
+        <h4>Menu</h4>
+        <h5>Home page</h5>
+        <h5>Portfolio</h5>
+        <h5>Fashion week</h5>
+        <h5>News/Article</h5>
+        <h5>Contact</h5>
+      </div>
+      <div id="left-center">
+        <h1>Select</h1>
+        <h1>Fashion</h1>
+        <h1>Mode.05 - </h1>
+        <h1>Scene</h1>
+        
+      </div>
+      <div id="left-bottom">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia natus officiis labore atque voluptatibus maiores, eaque, cupiditate nostrum optio deserunt aperiam repudiandae vitae quod culpa tempora sapiente. Minima, at aspernatur?</p>
+      </div>
+      <div id="right">
+        <video autoplay loop muted src="./312c97ad176a2c7ba2c2716aecc28329.mp4"></video>
+      </div>
+      <div id="arrow">
+        <i class="ri-arrow-right-line"></i>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
