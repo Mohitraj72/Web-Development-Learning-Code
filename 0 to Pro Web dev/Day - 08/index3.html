@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    main,
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    #parent {
+      min-height: 100%;
+      width: 100vw;
+      background-color: crimson;
+    }
+
+    #child{
+        height: 100vh;
+        width: 50%;
+        background-color: lightgreen;
+    }
+    #child2{
+        height: 100vh;
+        width: 50%;
+        background-color: #00b900;
+    }
+  </style>
+  <body>
+    <div id="parent">
+        <div id="child"></div>
+        <div id="child2"></div>
+    </div>
+  </body>
+</html>
