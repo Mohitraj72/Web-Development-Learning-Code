@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100;
+    }
+    #box {
+      height: 400px;
+      width: 400px;
+      background-color: brown;
+      position: absolute;
+      animation-name: move;
+      animation-duration: 3s;
+      animation-delay: 1s;
+    }
+
+    @keyframes move {
+        from{
+            left: 0px;
+            background-color: red;
+            rotate: 0;
+
+        }
+        to {
+            left: 60%;
+            background-color: blueviolet;
+            rotate: 360deg;
+        }
+    }
+
+
+
+  </style>
+  <body>
+    <div id="box"></div>
+  </body>
+</html>
