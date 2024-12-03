@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100;
+      background-color: #000000;
+      padding: 5vw;
+    }
+
+    button{
+        padding: 30px 40px;
+        background-color: transparent;
+        border: 2px solid cyan;
+        color: cyan;
+        font-weight: 600;
+        transition: all linear 0.5s;
+        position: relative;
+        
+        
+    }
+
+    button::after{
+        content: " ";
+        height: 100%;
+        width: 0;
+        background-color: cyan;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all linear 0.5s;
+        z-index: -1;
+    }
+
+    button:hover::after{
+        width: 100%;
+
+    }
+
+    /* button:hover{
+        color: black;
+    } */
+
+    
+
+
+  </style>
+  <body>
+    <button>Start Now</button>
+  </body>
+</html>

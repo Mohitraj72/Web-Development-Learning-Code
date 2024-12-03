@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100;
+    }
+    h1 {
+      font-size: 50px;
+      color: red;
+    }
+    h1::before {
+      content: "I am learning ";
+    }
+
+    h1::after {
+      content: " and CSS";
+      /* color: green; */
+    }
+    #box {
+      height: 200px;
+      width: 200px;
+      background-color: aqua;
+    }
+
+    #box::after {
+      content: "Hello Kaise ho";
+    }
+    #box::before {
+      content: "haa jii ";
+    }
+  </style>
+  <body>
+    <h1>Hello Welcome to HTML</h1>
+
+    <div id="box"></div>
+  </body>
+</html>
