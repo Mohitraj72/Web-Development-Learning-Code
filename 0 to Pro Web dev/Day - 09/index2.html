@@ -17,7 +17,7 @@
         height: 100%;
         width: 100;
       }
-      #box {
+      #box1 {
         background-color: blueviolet;
         height: 300px;
         width: 300px;
@@ -25,6 +25,22 @@
         animation-name: anime;
         animation-duration: 2s;
         animation-delay: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+      }
+
+      #box2 {
+        background-color: rgb(43, 226, 226);
+        height: 300px;
+        width: 300px;
+        position: relative;
+        animation-name: anime;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 2;
       }
 
       @keyframes anime {
@@ -47,6 +63,7 @@
     </style>
   </head>
   <body>
-    <div id="box"></div>
+    <div id="box1"></div>
+    <div id="box2"></div>
   </body>
 </html>
