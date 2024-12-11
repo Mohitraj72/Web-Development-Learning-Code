@@ -65,3 +65,24 @@ body {
 #nav h2:nth-last-child(2) {
   width: 28%;
 }
+
+#center {
+  height: 80%;
+  width: 100%;
+  background-color: rebeccapurple;
+  padding: 4vw;
+  position: relative;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+  position: relative;
+}
+
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
