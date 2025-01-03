@@ -1,12 +1,12 @@
 @media (max-width: 600px) {
   #nav {
-    height: 80px;
+    height: 40px;
     width: 100%;
     background-color: blueviolet;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   #nav-part1 {
@@ -17,8 +17,8 @@
   }
 
   .gola {
-    height: 25px;
-    width: 25px;
+    height: 10px;
+    width: 10px;
     background-color: black;
     border-radius: 50%;
   }
