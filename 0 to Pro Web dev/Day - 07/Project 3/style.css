@@ -85,7 +85,7 @@ body {
 #text-content {
   height: 40%;
   width: 100%;
-  background-color: burlywood;
+  /* background-color: burlywood; */
   display: flex;
   /* flex-wrap: nowrap; */
   overflow-x: auto;
@@ -94,16 +94,11 @@ body {
 #text-content::-webkit-scrollbar {
   background-color: transparent;
   height: 7px;
-
 }
 
-
-#text-content::-webkit-scrollbar-thumb{
-    background-color: orangered;
+#text-content::-webkit-scrollbar-thumb {
+  background-color: orangered;
 }
-
-
-
 
 .elem {
   flex-shrink: 0;
@@ -122,22 +117,21 @@ body {
   font: 300;
 }
 
-#image-content{
-    height: 60%;
-    width: 100%;
-    background-color: aquamarine;
-    display: flex;
-    overflow-x: auto;
-
+#image-content {
+  height: 60%;
+  width: 100%;
+  background-color: aquamarine;
+  display: flex;
+  overflow-x: auto;
 }
 
-#image-content img{
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+#image-content img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-#image-content::-webkit-scrollbar{
-    display: none;
+#image-content::-webkit-scrollbar {
+  display: none;
 }

@@ -1,0 +1,25 @@
+@media (max-width: 600px) {
+  #nav {
+    height: 80px;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  #nav-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .gola {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+  }
+}
