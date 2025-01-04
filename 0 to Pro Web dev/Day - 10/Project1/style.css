@@ -95,6 +95,7 @@ body {
   /* background-color: red; */
   padding: 1.5vw;
   color: #f8f8f8;
+  /* backdrop-filter: blur(10px); */
 }
 
 #over1{
