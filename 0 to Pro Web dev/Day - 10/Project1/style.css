@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka:wght@300..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #f8f8f8;
 }
 
 #main {
@@ -44,6 +47,28 @@ body {
   font-weight: bold;
   font-size: 37px;
   letter-spacing: -2px;
+  position: relative;
+}
+
+#nav h1::after {
+  content: "  ©";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  position: absolute;
+  right: 4%;
+  top: 10;
+}
+
+#nav h1::before {
+  content: "model management";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  position: absolute;
+  right: 4%;
+  top: 60%;
+  letter-spacing: 1px;
 }
 
 #nav h2 {
@@ -228,13 +253,12 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 2vw 5vw;
-
 }
 
 #page2-part1 {
   height: 100%;
   width: 50%;
-  background-image: url(https://images.unsplash.com/photo-1541580621-47abd5e3da8b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(https://images.unsplash.com/photo-1583777256056-4174d78d27b5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
   background-position: center;
 }
@@ -242,11 +266,154 @@ body {
 #page2-part2 {
   height: 100%;
   width: 46%;
-  /* background-image: url(https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
 }
 
-#page2-part2 img{
+#page2-part2 img {
   height: 70%;
   width: 100%;
   object-fit: cover;
+  object-position: center;
+}
+
+#text {
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+}
+
+#text1 {
+  margin-right: 30px;
+}
+
+#text2 p {
+  font-size: 12px;
+}
+
+#page3 {
+  /* background-color: rebeccapurple; */
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 5vw 4vw;
+}
+
+#page3 > h1 {
+  text-align: center;
+  font-family: "Fredoka", serif;
+
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: 900;
+  margin-bottom: 7vh;
+}
+
+.elem {
+  height: 15vh;
+  width: 100%;
+  /* background-color: rebeccapurple; */
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  position: relative;
+  transition: all ease 0.7s;
+}
+
+.elem img {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  border-radius: 50%;
+  left: 12%;
+  object-position: top;
+  object-fit: cover;
+  opacity: 0;
+  transition: all ease 0.7s;
+}
+
+.elem:nth-last-child(1) img {
+  left: 40%;
+}
+
+.elem:nth-last-child(3) img {
+  left: 40%;
+}
+
+.elem:hover img {
+  opacity: 1;
+  left: 24%;
+}
+.elem:hover {
+  background-color: rgb(226, 221, 221);
+}
+
+.elem h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 6%;
+  font-weight: 900;
+}
+
+.elem .elem-part2 {
+  width: 45%;
+}
+
+.elem-part2 h1 {
+  font-size: 2.7vw;
+  font-weight: 600;
+}
+.elem-part2 h5 {
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.elem:nth-last-child(1) {
+  border-bottom: 2px solid black;
+}
+
+#marque {
+  /* height: 15vh; */
+  width: 100%;
+  /* background-color: #ff0000; */
+  padding: 0.5vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#marque h1 {
+  display: inline-block;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  font-family: monospace;
+  margin-right: 16px;
+  letter-spacing: 2px;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+#footer {
+  height: 100%;
+  width: 100%;
 }
