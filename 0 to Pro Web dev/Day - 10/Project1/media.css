@@ -5,13 +5,13 @@
     height: 100%;
     width: 100%;
     background-color: #f8f8f8;
-    background-color: #e07171;
+    /* background-color: #e07171; */
     position: relative;
     padding-top: 0.1px;
   }
 
   #nav {
-    height: 12vh;
+    height: 8vh;
     width: 100%;
     /* background-color: aqua; */
     margin-top: 35px;
