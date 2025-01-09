@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <style>
+      div {
+        border: 1px solid black;
+        height: 800px;
+      }
+
+      .container {
+        /* position: relative; */
+      }
+
+      img {
+        margin: 10px;
+        height: 300px;
+        width: 300px;
+      }
+
+      /* .img2 {
+        position: relative;
+        top: 100px;
+        right: 20px;
+      } */
+
+      .img3 {
+        position: absolute;
+        top: 20px;
+        /* left: 10px; */
+      }
+
+
+      .img4 {
+        position: fixed;
+       
+      }
+
+      .img1{
+        position: sticky;
+        top: 100px;
+        border-radius: 20%;
+
+        
+      }
+
+      .box{
+        height: 500px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1736281528231-130c030db2d0?q=80&w=1477&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+        class="img1"
+      />
+
+      <img
+        src="https://plus.unsplash.com/premium_photo-1732835088231-6674e3167640?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+        class="img2"
+      />
+
+      <img
+        src="https://images.unsplash.com/photo-1736281512973-d17ef05f9709?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+        class="img3"
+      />
+
+      <img
+        src="https://images.unsplash.com/photo-1736281554803-a04e6499b576?q=80&w=1459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+        class="img4"
+      />
+
+    </div>
+    <div class="box"></div>
+  </body>
+</html>
