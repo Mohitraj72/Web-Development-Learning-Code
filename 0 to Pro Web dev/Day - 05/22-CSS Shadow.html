@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Border</title>
+    <style>
+      :root {
+        --primary-color: #eb5a3c;
+        --second-color: #f2ae66;
+      }
+
+      .container {
+        background-color: #8174a0;
+        height: 97vh;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        background-color: #48484d;
+        width: 300px;
+        height: 330px;
+        border: 1px solid var(--primary-color);
+        margin: 5px;
+        padding: 5px;
+        /* box-shadow: 5px 5px black; */
+        /* box-shadow: 10px 10px 25px black; */
+        /* box-shadow: 10px 15px 5px 20px #424242; */
+        /* box-shadow: inset 10px 10px black; */
+        /* box-shadow: 10px 10px var(--second-color), 15px 15px var(--primary-color); */
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #head{
+        /* text-shadow: 2px 3px 1px white; */
+        /* text-shadow: yellow 4px 4px ; */
+        /* text-shadow: 12px 12px; */
+        text-shadow: green 2px 2px , yellow 4px 4px , rgb(212, 0, 0) 5px 5px 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="./Coding.png" alt="" height="100px" width="100px" />
+        <h2 id="head">Welcome to Byteincode</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          laudantium quasi, delectus at officia alias consectetur fuga
+          aspernatur, inventore nobis molestiae error, neque laborum culpa sequi
+          omnis illum blanditiis quos ullam quibusdam esse amet? Natus id
+          accusantium similique fugiat necessitatibus?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
