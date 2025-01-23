@@ -26,9 +26,9 @@ body {
   padding: 0.1rem;
 }
 
-.header{
+/* .header{
   border: 1px solid black
-}
+} */
 
 .header-content {
   max-width: 75%; /*Here i change this */
