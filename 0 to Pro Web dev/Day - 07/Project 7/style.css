@@ -240,4 +240,15 @@ body {
   .section-label {
     font-size: 1rem;
   }
+  .section-title{
+    font-size: 3rem;
+  }
+  .image-container{
+    height: 67vh;
+  }
+  .section-description{
+    font-size: 1rem;
+    color: var(--gray);
+    width: 78%;
+  }
 }
