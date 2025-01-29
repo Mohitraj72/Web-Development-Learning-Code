@@ -322,6 +322,7 @@ body {
 
 .main-title {
   font-size: 2.3rem;
+  font-weight: bold;
 }
 
 .main-description {
@@ -402,4 +403,18 @@ body {
 }
 .feature-card:nth-child(6){
   background-color: #7d78b1;
+}
+
+
+@media screen and (max-width:768px) {
+  .feature-grid{
+    grid-template-columns: repeat(1,1fr);
+    margin: 0 1rem;
+    margin-top: 1.3rem;
+  }
+
+  .feature-content{
+    margin: 0 1rem;
+  }
+  
 }
