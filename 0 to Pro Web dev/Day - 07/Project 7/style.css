@@ -480,7 +480,8 @@ body {
   background-color: var(--background-color);
   padding: 2rem;
   max-width: 75%;
-  height: 35vh;
+  height: 40vh;
+  margin: 0 auto;
 }
 
 .newsletter-content {
@@ -488,6 +489,8 @@ body {
   flex-direction: row;
   background-color: var(--light-gray);
   height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .newsleft {
@@ -500,4 +503,56 @@ body {
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.news-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.news-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.news-info {
+  padding: 0 3rem;
+}
+
+.news-description {
+  text-align: left;
+  color: #777;
+}
+
+.news-form {
+  padding: 0 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  gap: 0.6rem;
+  
+}
+
+
+.news-email{
+  background-color: var(--background-color);
+  /* width: 100%; */
+  color: #333;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+
+}
+
+..news-email:focus{
+  border: ;
+
+  26 min par video me 
+
 }
