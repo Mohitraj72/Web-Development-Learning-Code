@@ -478,7 +478,7 @@ body {
 
 .newsletter-container {
   background-color: var(--background-color);
-  padding: 2rem;
+  
   max-width: 75%;
   height: 40vh;
   margin: 0 auto;
@@ -512,6 +512,10 @@ body {
 @media   screen and (min-width:640px) {
   .newsleft{
     display: block;
+  }
+
+  .newsletter-container{
+    padding: 2rem;
   }
 }
 
