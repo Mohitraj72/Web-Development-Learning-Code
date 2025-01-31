@@ -550,9 +550,18 @@ body {
 
 }
 
-..news-email:focus{
-  border: ;
+.news-email:focus{
+  border-color: #2563eb;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
 
-  26 min par video me 
+  
 
+}
+
+.news-send-button{
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
 }
