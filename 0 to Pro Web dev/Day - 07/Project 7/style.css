@@ -526,10 +526,11 @@ body {
   padding: 0.5rem;
   justify-content: center;
   align-items: flex-start;
+  width: 98%;
 }
 
 .news-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: var(--primary-color);
 }
@@ -588,4 +589,11 @@ body {
 .news-link{
   text-decoration: underline;
   color: #2563eb;
+}
+
+@media screen and (min-width:640px) {
+  .news-title{
+    font-size: 2.5rem;
+  }
+  
 }
