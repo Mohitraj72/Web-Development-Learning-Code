@@ -609,7 +609,7 @@ body {
 
 .footer{
   max-width: 75%;
-  padding: 1rem;
+  padding: 1rem 2.4rem;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -618,6 +618,9 @@ body {
 
 .footer-top{
   width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
 
 }
 
@@ -629,6 +632,9 @@ body {
 .comp-logo{
   display: flex;
   justify-content: flex-start;
+  margin-bottom: -1.7rem;
+
+
 }
 
 .logo-link{
@@ -636,13 +642,18 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
-  font-size: 1.5rem;
+  font-size: 1.28rem;
   font-weight: bold;
-  
-
+  color: var(--text-color);
 }
 
 .social-icon{
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.filler-text{
+  font-size: 1rem;
+  color: #777;
+
 }
