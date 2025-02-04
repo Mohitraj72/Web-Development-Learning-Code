@@ -668,4 +668,23 @@ body {
 .footer-grid-heading{
   font-size: 1.05rem;
   font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 1.6rem;
+
+}
+
+ul{
+  list-style: none;
+}
+
+.footer-link{
+  color: #777;
+  font-size: 1rem;
+
+}
+
+.footer-links-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
