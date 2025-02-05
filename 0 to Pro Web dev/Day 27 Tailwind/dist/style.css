@@ -554,6 +554,22 @@ video {
   display: none;
 }
 
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
@@ -562,6 +578,62 @@ video {
 .bg-orange-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[578FCA\] {
+  background-color: 578FCA;
+}
+
+.bg-\[\#578FCA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 143 202 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[727D73\] {
+  background-color: 727D73;
+}
+
+.bg-\[\#727D73\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(114 125 115 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#7b727d\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 114 125 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#7d727d\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 114 125 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#504a50\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(80 74 80 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#424042\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(66 64 66 / var(--tw-bg-opacity, 1));
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-3xl {
@@ -576,4 +648,40 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-orange-50 {
+  --tw-text-opacity: 1;
+  color: rgb(255 247 237 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#\] {
+  color: #;
+}
+
+.text-\[\#777\] {
+  --tw-text-opacity: 1;
+  color: rgb(119 119 119 / var(--tw-text-opacity, 1));
+}
+
+.text-\[F5F5F5\] {
+  color: F5F5F5;
+}
+
+.text-\[\#F5F5F5\] {
+  --tw-text-opacity: 1;
+  color: rgb(245 245 245 / var(--tw-text-opacity, 1));
+}
+
+.text-\[F3C623\] {
+  color: F3C623;
+}
+
+.text-\[\#F3C623\] {
+  --tw-text-opacity: 1;
+  color: rgb(243 198 35 / var(--tw-text-opacity, 1));
 }
