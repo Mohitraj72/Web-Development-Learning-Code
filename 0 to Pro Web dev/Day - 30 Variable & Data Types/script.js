@@ -30,6 +30,11 @@
 // const a = 28;   it can't be changed
 // console.log(a);
 
+let marks = 20.2345;
+marks = "Mohit";
+marks = true;
+console.log(marks);
+
 
 
 
