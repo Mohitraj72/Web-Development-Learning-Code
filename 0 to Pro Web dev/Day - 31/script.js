@@ -37,6 +37,15 @@ let status = (age > 18) ? 'i can vote' : 'i cannot Vote';
 console.log(status);
 
 
+// Logical Operator
+
+
+// let ans = (true && true && true)
+// console.log(ans);
+
+// let ans = (false || false || false);
+let ans = !(false);
+console.log(ans);
 
 
 
