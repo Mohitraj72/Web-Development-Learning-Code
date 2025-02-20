@@ -1,25 +1,14 @@
-console.log("Mohit");
+// Arithmetic Operator 
 
-h2
+let a = 10;
+let b = 5;
 
-h5
-hhh
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a**b);
 
-h4
 
-h55
 
-222 
-
-33
-
-44
-
-33
-
-h555
-
-44444
-
-5555
 
