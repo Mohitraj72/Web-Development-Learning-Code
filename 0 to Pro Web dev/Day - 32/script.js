@@ -17,3 +17,22 @@ let str = "ILoveCoding";
 
 console.log(str.indexOf("C"));
 console.log(str.indexOf("o"));
+
+
+//! Method Of Chaining 
+
+let masg = "      Hello      ";
+
+// console.log(masg.trim());
+// console.log(masg.toUpperCase());
+
+console.log(masg.trim().toUpperCase());
+
+//! slice Method 
+
+let stri = 'ILoveCoding';
+
+console.log(stri.slice(5));
+console.log(stri.slice(5,9)); 
+
+
