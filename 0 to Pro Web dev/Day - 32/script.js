@@ -35,4 +35,16 @@ let stri = 'ILoveCoding';
 console.log(stri.slice(5));
 console.log(stri.slice(5,9)); 
 
+//! Replace and Repeat Method
+
+let coding = "ILOVECODING ";
+
+console.log(coding.replace("LOVE", "DO"));
+
+console.log(coding.repeat(3));
+
+//! Array (Data Structure)
+
+
+
 
