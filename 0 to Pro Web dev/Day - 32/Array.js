@@ -61,3 +61,37 @@ console.log(primary.reverse());
 
 
 //! Slice Array Method 
+
+let colors = ["red", "yellow", "blue", "pink", "white"];
+
+console.log(colors.slice(2, 5));
+
+//! Splice Array Method
+
+console.log(colors.splice(1, 3));
+
+//! Sort array Method
+
+let days = ["monday", "tuesday", "wednesday", "friday", "saturday", "sunday"];
+
+console.log(days.sort());
+
+//! Array Reference 
+
+console.log("name" == "name");
+console.log("name" === "name");
+console.log([1] == [1]);
+console.log([] == []);
+
+//! Constant Array 
+
+const array = [1, 2, 3, 4, 5, 6, 7];
+
+console.log(array);
+
+//! Nested Array 
+
+let nums = [[2, 4], [3, 5], [7, 8], [10, 88], [77, 89]]
+console.table(nums);
+
+
