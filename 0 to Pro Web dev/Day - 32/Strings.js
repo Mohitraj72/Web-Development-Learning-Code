@@ -1,4 +1,4 @@
-// String Method - actions that can be performed on objects.
+//! String Method - actions that can be performed on objects.
 
 //! Trim Method
 
@@ -33,7 +33,7 @@ console.log(masg.trim().toUpperCase());
 let stri = 'ILoveCoding';
 
 console.log(stri.slice(5));
-console.log(stri.slice(5,9)); 
+console.log(stri.slice(5, 9));
 
 //! Replace and Repeat Method
 
