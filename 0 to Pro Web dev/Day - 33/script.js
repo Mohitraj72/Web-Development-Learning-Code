@@ -13,7 +13,17 @@ for (let i =1; i<=100; i=i+2){
 
 
 for (let i =15; i>=1; i=i-2){
-    console.log(i);
+    // console.log(i);
 }
 
 //! Print all even Number 
+
+for (let i =2 ; i<=10; i= i+2){
+    // console.log(i);
+}
+
+
+for (let i = 10; i>=2; i =i-2){
+    // console.log(i);
+}
+
