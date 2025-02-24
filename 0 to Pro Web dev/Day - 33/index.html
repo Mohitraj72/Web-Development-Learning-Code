@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-
+  </head>
+  <body>
     <script src="script.js"></script>
-</body>
+    <script>
+        
+      //! Favourite Movie Program
+
+      const favmovie = "ok";
+
+      let guess = prompt("guess my Movies");
+
+      while (guess != favmovie && guess != "quit") {
+        guess = prompt("wrong Guess please Try again");
+      }
+
+      if (guess == favmovie) {
+        document.write("Congrates");
+      } else {
+        document.write("You Quit");
+      }
+    </script>
+  </body>
 </html>

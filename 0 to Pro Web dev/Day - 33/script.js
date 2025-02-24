@@ -43,7 +43,7 @@ for (let i = 10; i >= 2; i = i - 2) {
 //! Nested For loops 
 
 for (let i = 1; i <= 3; i++) {
-    
+
     for (let j = 1; j <= 3; j++) {
         // console.log(j);
     }
@@ -52,14 +52,11 @@ for (let i = 1; i <= 3; i++) {
 
 //! while Loop 
 
-let i =1;
+let i = 1;
 
-while(i <= 5){
+while (i <= 5) {
     // console.log(i);
     i++;
 }
-
-
-//! Favourite Movie Program 
 
 
