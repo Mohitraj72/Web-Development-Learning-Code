@@ -60,3 +60,84 @@ while (i <= 5) {
 }
 
 
+//! Break Keyword 
+
+{
+    let i = 1;
+    while (i <= 5) {
+        if (i == 4) {
+            break;
+        }
+        // console.log(i);
+        i++;
+    }
+}
+
+
+//! Loops With Array
+
+{
+    let fruits = ["mango", "banana", "apple", "orange", "litchi"];
+    fruits.push("pineapple")
+
+    for (let i = 0; i < fruits.length; i = i + 1) {
+        // console.log(i, fruits[i]);
+    }
+
+}
+
+
+
+//! Nested Loops with Nested Array 
+
+{
+    let heores = [
+        ["ironman", "spiderman", "thor"],
+        ["superman", "wonder", "flash"]
+    ];
+
+    for (let i = 0; i < heores.length; i++) {
+        // console.log(i, heores[i].length);
+
+        for (let j = 0; j < heores[i].length; j++) {
+            // console.log(`j=${j}, ${heores[i][j]}`);
+        }
+    }
+}
+
+
+{
+    let students  = [["aman", 95], ["sardha", 89], ["karan", 88]];
+
+    for (let i =0; i<students.length; i++){
+        // console.log(`info of students = ${i+1}`);
+        for (let j = 0; j<students[i].length;j++){
+            // console.log(students[i][j]);
+        }
+    }
+}
+
+//! For of Loops 
+
+let fruits = ["mango", "apple", "banana", "litchi", "orange"];
+
+for (i of fruits){
+    // console.log(i);
+}
+
+// for (char of "Mohit"){
+//      console.log(char);
+// }
+
+
+//! Nested for of Loop 
+
+{
+    let fruits = ["mango", "apple", "banana", "litchi", "orange"];
+
+    for (list of fruits) {
+        for (fruits of list ){
+            console.log(fruits);
+        }
+    }
+}

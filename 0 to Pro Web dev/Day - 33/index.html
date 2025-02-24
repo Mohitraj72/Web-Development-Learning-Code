@@ -6,24 +6,27 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <script>
-        
       //! Favourite Movie Program
 
       const favmovie = "ok";
 
       let guess = prompt("guess my Movies");
 
-      while (guess != favmovie && guess != "quit") {
+      while (guess != favmovie) {
+        if (guess == "quit") {
+          document.write("you Quit");
+          break;
+        }
         guess = prompt("wrong Guess please Try again");
       }
 
       if (guess == favmovie) {
         document.write("Congrates");
-      } else {
-        document.write("You Quit");
       }
+
+      
     </script>
   </body>
 </html>
