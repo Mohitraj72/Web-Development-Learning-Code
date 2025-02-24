@@ -29,15 +29,15 @@ for (let i = 10; i >= 2; i = i - 2) {
 
 //! Infinite Loops 
 
-for (let i = 1; i >= 0; i++) {
-    // console.log(i);
-}
+// for (let i = 1; i >= 0; i++) {
+//      console.log(i);
+// }
 
 //! Print the multiplication table for 5 
 
-for (let i = 5; i <= 50; i = i + 5) {
-    console.log(i);
-}
+// for (let i = 5; i <= 50; i = i + 5) {
+//     console.log(i);
+// }
 
 
 //! Nested For loops 
@@ -48,3 +48,18 @@ for (let i = 1; i <= 3; i++) {
         // console.log(j);
     }
 }
+
+
+//! while Loop 
+
+let i =1;
+
+while(i <= 5){
+    // console.log(i);
+    i++;
+}
+
+
+//! Favourite Movie Program 
+
+
