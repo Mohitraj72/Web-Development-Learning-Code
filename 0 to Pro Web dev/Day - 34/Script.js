@@ -83,3 +83,44 @@ console.log(classinfo.mohit.city);
 //! Array Of Objects 
 
 
+const classinformation = [
+    {
+        name: "Mohit",
+        Grade: "A+",
+        City: "Delhi"
+    },
+
+    {
+        name: "Raj",
+        Grade: "B+",
+        city: "Mumbai"
+    },
+
+    {
+        name: "Karan",
+        Grade: "c+",
+        city: "Bihar"
+    }
+]
+
+
+console.log(classinformation[0]);
+console.log(classinformation[1].name);
+
+
+//! Math Objects
+
+console.log(Math.PI);
+console.log(Math.E);
+console.log(Math.abs(-12));
+console.log(Math.pow); 
+console.log(Math.floor(-555.6556)); 
+
+
+//! random number Generate
+
+let num = Math.floor(Math.random() *100) +1 ;
+
+console.log(num);
+
+
