@@ -54,4 +54,32 @@ delete students.age;
 
 console.table(students);
 
+//! Objects of Objects 
+
+const classinfo = {
+
+    mohit: {
+        Grade: "a+",
+        city: "Delhi"
+    },
+
+    Raj: {
+        Grade: "B",
+        city: "pune"
+    },
+
+    Sohan: {
+        Grade: "C",
+        city: "mumbai"
+
+    }
+};
+
+classinfo.mohit.city = "Bihar";
+
+console.log(classinfo.mohit.city);
+
+
+//! Array Of Objects 
+
 
