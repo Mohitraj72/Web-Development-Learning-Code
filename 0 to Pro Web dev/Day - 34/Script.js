@@ -35,3 +35,23 @@ console.log(post.tags[0]);
 
 //! Conversion in Get Value
 
+//! Add/ Update Value
+
+const studs = {
+    name: "Mohit",
+    age: 25,
+    Marks: 94,
+    city: "Delhi"
+};
+
+studs.city = "Mumbai";
+
+studs.gender = "male";
+
+console.table(studs);
+
+delete students.age;
+
+console.table(students);
+
+
