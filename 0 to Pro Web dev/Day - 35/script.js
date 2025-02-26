@@ -1,0 +1,66 @@
+//! functions in Javascript 
+
+function hello() {
+    console.log("hello");
+}
+
+// hello();
+
+function isadult() {
+    let age = 8;
+    if (age >= 18) {
+        console.log("adult");
+    } else {
+        console.log("not adult");
+    }
+}
+
+// isadult();
+
+//! Function with agruments 
+
+function printname(name, age) {
+    console.log(`${name}'s age is ${age}.`);
+}
+
+// printname("Mohit", 22);
+// printname("Nikhil", 19);
+
+
+function sum (a,b) {
+    console.log(a+b);
+}
+
+// sum(5,8);
+
+
+//! Return Keywords 
+
+function sub(a,b) {
+    return a-b;
+}
+
+
+// console.log(sub (3,4));
+
+
+//! what is Scope 
+
+// let sum = 54;   // global Scope 
+
+// function calsum(a,b) {
+//      let sum = a+b;  // Function scope 
+//     console.log(sum);  
+// }
+
+// calsum();
+// console.log(sum);
+
+
+//! Block Scope 
+
+{
+
+
+    
+}
