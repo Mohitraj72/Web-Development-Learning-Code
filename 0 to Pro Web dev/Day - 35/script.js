@@ -27,8 +27,8 @@ function printname(name, age) {
 // printname("Nikhil", 19);
 
 
-function sum (a,b) {
-    console.log(a+b);
+function sum(a, b) {
+    console.log(a + b);
 }
 
 // sum(5,8);
@@ -36,8 +36,8 @@ function sum (a,b) {
 
 //! Return Keywords 
 
-function sub(a,b) {
-    return a-b;
+function sub(a, b) {
+    return a - b;
 }
 
 
@@ -61,8 +61,8 @@ function sub(a,b) {
 
 {
 
-    let a  = 25;
-    const ab = 22; 
+    let a = 25;
+    const ab = 22;
 
 
 }
@@ -78,7 +78,7 @@ function outerfunc() {
         console.log(y);
     }
 
-    innerfun(); 
+    innerfun();
 }
 
 outerfunc();
@@ -88,11 +88,11 @@ outerfunc();
 
 let name = "shardha";
 
-let sums = function (a,b) {
-    return a+b;
+let sums = function (a, b) {
+    return a + b;
 }
 
-sums(1,2);
+sums(1, 2);
 
 
 let hellos = function () {
@@ -108,26 +108,58 @@ hellos();
 
 //! High Order Functions 
 
-function multiplegreet (func, count) {
-    for (let i=1; i<=count; i++){
+function multiplegreet(func, count) {
+    for (let i = 1; i <= count; i++) {
         func();
     }
 }
 
-let greet = function() {
+let greet = function () {
     console.log("Hello jiii");
 }
 
-multiplegreet(greet, 1000);
+multiplegreet(greet, 10);
 
-multiplegreet(function() {console.log("Namaste")},100);
+multiplegreet(function () { console.log("Namaste") }, 10);
 
 
 //! Higher order Functions  Return a Function 
 
 function oddEvenTest(request) {
     if (request == "odd") {
-        return 
+        return function (n) {
+            console.log(!(n % 2 == 0));
+        }
+
+        return odd;
+    } else if (request == "even") {
+        return function (n) {
+            console.log(n % 2 == 0);
+        }
+
+        return even;
+    } else {
+        console.log("wrong request");
     }
 }
 
+let request = "odd";
+
+
+//! Methods 
+
+const calculator = {
+    add: function (a, b) {
+        return a + b;
+    },
+
+    sub: function (a, b) {
+        return a - b;
+    },
+    mul: function (a, b) {
+        return a * b;
+    }
+};
+
+
+console.log(calculator.add(4,3));
