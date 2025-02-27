@@ -61,6 +61,24 @@ function sub(a,b) {
 
 {
 
-hiii
+    let a  = 25;
+    const ab = 22; 
+
 
 }
+
+
+//! Lexical Scope 
+
+function outerfunc() {
+    let x = 5;
+    let y = 6;
+    function innerfun() {
+        console.log(x);
+        console.log(y);
+    }
+
+    innerfun(); 
+}
+
+outerfunc();
