@@ -82,3 +82,29 @@ function outerfunc() {
 }
 
 outerfunc();
+
+
+//! Function Expressions 
+
+let name = "shardha";
+
+let sums = function (a,b) {
+    return a+b;
+}
+
+sums(1,2);
+
+
+let hellos = function () {
+    console.log("Hello");
+}
+
+hellos = function () {
+    console.log("Namaste");
+}
+
+hellos();
+
+
+//! High Order Functions 
+
