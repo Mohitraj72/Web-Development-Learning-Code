@@ -108,3 +108,26 @@ hellos();
 
 //! High Order Functions 
 
+function multiplegreet (func, count) {
+    for (let i=1; i<=count; i++){
+        func();
+    }
+}
+
+let greet = function() {
+    console.log("Hello jiii");
+}
+
+multiplegreet(greet, 1000);
+
+multiplegreet(function() {console.log("Namaste")},100);
+
+
+//! Higher order Functions  Return a Function 
+
+function oddEvenTest(request) {
+    if (request == "odd") {
+        return 
+    }
+}
+
