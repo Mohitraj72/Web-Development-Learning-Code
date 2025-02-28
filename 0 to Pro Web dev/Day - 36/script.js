@@ -18,4 +18,18 @@ students.getAvg();
 
 
 //! Try and catch 
+// let a = 5;
+
+
+try {
+    console.log(a);
+} catch (err){
+    console.log("Variable doesn't ");
+
+}
+
+
+//! Arrow Function 
+
+hii 
 
