@@ -9,7 +9,7 @@ const students = {
     phy: 77,
     getAvg() {
         console.log(this);
-        let avg = (this.eng + this.math + this.hindi) /3;
+        let avg = (this.eng + this.math + this.hindi) / 3;
         console.log(`${this.name} got avg marks = ${avg}`);
     }
 }
@@ -23,7 +23,7 @@ students.getAvg();
 
 try {
     console.log(a);
-} catch (err){
+} catch (err) {
     console.log("Variable doesn't ");
 
 }
@@ -31,7 +31,27 @@ try {
 
 //! Arrow Function 
 
-hii 
-hello 
-jjjjj
+const sum = (a, b) => {
+    console.log(a + b);
+
+};
+
+// sum(2, 8);
+
+const cube = (n) => {
+    return n * n * n;
+};
+
+console.log(cube(2));
+
+
+const pow = (a, b) => {
+    return a ** b;
+}
+
+console.log(pow(3, 4));
+
+//! Implicit Return in Arrow Functions
+
+
 
