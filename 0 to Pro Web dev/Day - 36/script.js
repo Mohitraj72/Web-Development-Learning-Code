@@ -54,4 +54,41 @@ console.log(pow(3, 4));
 //! Implicit Return in Arrow Functions
 
 
+const fun = (a, b) => a + b;
+
+console.log(fun(3, 5));
+
+//! Set TimeOUT 
+
+console.log("hii There");
+
+setTimeout(() => {
+    console.log("Mohit Raj");
+
+}, 4000);
+
+
+//! SetInterval 
+
+// setInterval (() => {
+//     console.log("Mohit Raj");
+// },200);
+
+
+
+
+//! this with Arrow Functions
+
+const student = {
+    name: "Mohit",
+    Marks: 95,
+    prop: this,   //Global scope 
+    getname: function () {
+       return this.name;
+    },
+};
+
+console.log(student.getname()); 
+
+
 
