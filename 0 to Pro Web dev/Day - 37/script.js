@@ -30,5 +30,5 @@ let array = [
 //! Map 
 
 let gpa = students.map((el) => {
-    return marks / 10;
+    return el.marks / 10;
 }); 
