@@ -20,23 +20,15 @@ let array = [
     { name: "Raj", marks: 92 },
     { name: "Shani", marks: 88 },
     { name: "SK", marks: 85 }
-]; 
+];
 
-array.forEach((student) => {
-    console.log(student.marks);
-});
+// array.forEach((student) => {
+//     console.log(student.marks);
+// });
 
 
 //! Map 
 
-dddd
-eeedd
-aaa 
-444
-iooooppooooo
-PublicKeyCredential;localStorage;;
-Hello Guys Here are you with me 
-aaaa 
-sdff
-
-raaaaa 
+let gpa = students.map((el) => {
+    return marks / 10;
+}); 
