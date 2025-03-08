@@ -29,6 +29,37 @@ let array = [
 
 //! Map 
 
-let gpa = students.map((el) => {
-    return el.marks / 10;
-}); 
+// let gpa = students.map((el) => {
+//     return el.marks / 10;
+// }); 
+
+
+
+
+
+//! Every 
+
+console.log([2,4,6].every((el) => el%2 == 0)); 
+
+
+//! Reduce 
+
+let nums = [1,2,3,4];
+
+let fianlval = nums.reduce((res,el) => {
+    console.log(res);
+    return res + el;
+});
+
+console.log(fianlval);
+
+
+let max = array.reduce((max, el) => {
+    if(max < el) {
+        return el;
+    } else {
+        return max;
+    }
+});
+
+console.log(max); 
