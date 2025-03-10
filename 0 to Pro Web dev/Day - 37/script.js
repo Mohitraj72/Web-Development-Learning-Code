@@ -86,4 +86,4 @@ let maxes = arr.reduce((max, el) => {
     }
 });
 
-console.log(maxes);
+console.log(maxes); 
