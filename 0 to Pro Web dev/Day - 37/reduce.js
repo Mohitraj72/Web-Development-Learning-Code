@@ -1,11 +1,11 @@
 const mynums = [1, 2, 3, 4, 5, 6];
 
-// const mytotal = mynums.reduce(function (acc,currval) {
-//     console.log(`acc: ${acc} and currival: ${currval}`);
-//     return acc + currval
-// },0)
+const mytotal = mynums.reduce(function (acc,currval) {
+    console.log(`acc: ${acc} and currival: ${currval}`);
+    return acc + currval
+},0)
 
-const mytotal = mynums.reduce((acc, curr) => acc + curr, 0)
+const mytotala = mynums.reduce((acc, curr) => acc + curr, 0)
 
 
 console.log(mytotal);
