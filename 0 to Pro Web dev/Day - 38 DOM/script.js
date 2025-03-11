@@ -11,10 +11,10 @@ a.style.backgroundColor = "white";
 a.style.cursor = "pointer";
 
 
-// let b = document.getElementsByClassName('heading')[0]
+let b = document.getElementsByClassName('heading')[0]
 
-// b.style.color = "yellow";
-// b.style.backgroundColor = "red"
+b.style.color = "yellow";
+b.style.backgroundColor = "red"
 
 
 //! Event Listner 
