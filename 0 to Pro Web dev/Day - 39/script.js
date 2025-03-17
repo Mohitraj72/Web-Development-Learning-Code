@@ -1,30 +1,7 @@
-kkkkkk
-kkkkkkhhhhh
-uiihhihi
-uiiihhhhhjhjh
-hihihh
-hello guys 
-hiii 
-hey yrr
+let btn = document.querySelector("button");
+console.dir(btn);
 
-hello raj 
-aa
-a
-
-sdfsdfd
-WebTransportError
-asdasdasddafsdfsdfsd
-
-adasdffdf
-jjkjjkjkj
-54485
-ghghghg
-jhguhgjggiuui
-ghghguyuyuy
-sessionStorage
-tytyty
-rtytutyuytyu
-ytuyuuiyuiuyi
-hahhah
-qdsdsdfdfdsf
-4545 
+btn.onclick = function () {
+    console.log("Hello\n");
+    // alert('msg');
+};
