@@ -1,4 +1,4 @@
-let btn = document.querySelector("button");
+let btn = document.querySelectorAll("button");
 console.dir(btn);
 
 // btn.onclick = function () {
@@ -6,12 +6,15 @@ console.dir(btn);
 //     alert('msg');
 // };
 
+for (btn of btn) {
+    btn.onclick = sayHello;
+    btn.onmouseenter = function () {
+        console.log("You entered");
+    }
+}
 
 function sayHello() {
     alert('msg');
 }
 
-btn.onclick = sayHello;
-1213323
-454545
-787888
+
