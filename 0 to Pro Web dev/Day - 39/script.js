@@ -20,8 +20,28 @@ function sayHello() {
     alert('msg');
 }
 
+
+// Paragraph 
 let p = document.querySelector("p");
 
-p.addEventListener("click", function() {
+p.addEventListener("click", function () {
     console.log("Clicked");
 })
+
+
+//Box
+let box = document.querySelector(".box");
+
+box.addEventListener("mouseenter", function () {
+    console.log("Box");
+
+})
+
+
+
+//! this event Listners 
+
+let btns = document.querySelector(".btns");
+btns.addEventListener("click", function () {
+    console.dir(this);
+});
