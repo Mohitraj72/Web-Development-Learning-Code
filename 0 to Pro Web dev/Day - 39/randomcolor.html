@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    div {
+      height: 200px;
+      width: 400px;
+      border: 1px solid black;
+      text-align: center;
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+    <h2>Generate a random Color</h2>
+    <h3> </h3>
+    <br />
+    <button>Generate Color</button> <br />
+    <div>This is your new colour</div>
+    <button id="copyBtn">Copy Color</button>
+
+    <script>
+      let btn = document.querySelector("button");
+      let copyBtn = document.querySelector("#copyBtn");
+      let h3 = document.querySelector("h3");
+
+      btn.addEventListener("click", function () {
+        let h3 = document.querySelector("h3");
+        let randomcolor = getrandomcolor();
+        h3.innerText = randomcolor;
+
+        let div = document.querySelector("div");
+        div.style.backgroundColor = randomcolor;
+      });
+
+      copyBtn.addEventListener("click", function () {
+        let colorToCopy = h3.innerText;
+        if (colorToCopy) {
+          navigator.clipboard
+            .writeText(colorToCopy)
+            .then(() => {
+              alert("Color copied to clipboard: " + colorToCopy);
+            })
+            .catch(() => {
+              alert("Failed to copy color to clipboard.");
+            });
+        } else {
+          alert("No color generated yet!");
+        }
+      });
+
+      function getrandomcolor() {
+        let red = Math.floor(Math.random() * 255); // 0 to 255
+        let green = Math.floor(Math.random() * 255); // 0 to 255
+        let blue = Math.floor(Math.random() * 255); // 0 to 255
+
+        let color = `rgb(${red}, ${green}, ${blue})`;
+        return color;
+      }
+    </script>
+  </body>
+</html>

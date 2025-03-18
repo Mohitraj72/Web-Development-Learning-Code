@@ -7,14 +7,21 @@ console.dir(btn);
 // };
 
 for (btn of btn) {
-    btn.onclick = sayHello;
-    btn.onmouseenter = function () {
-        console.log("You entered");
-    }
+    // btn.onclick = sayHello;
+    // btn.onmouseenter = function () {
+    //     console.log("You entered");
+    // }
+    btn.addEventListener("dblclick", function () {
+        console.log("you double clicked me");
+    });
 }
 
 function sayHello() {
     alert('msg');
 }
 
+let p = document.querySelector("p");
 
+p.addEventListener("click", function() {
+    console.log("Clicked");
+})
