@@ -67,6 +67,35 @@ section.addEventListener("click", changecolor);
 
 let inp = document.querySelector("input");
 
-inp.addEventListener("keydown", function() {
-    console.log("Key was Pressed");
-})
+// inp.addEventListener("keydown", function() {
+//     console.log("Key was Pressed");
+// })
+
+// inp.addEventListener("keyup", function(event) {
+//     console.log(event);
+//     console.log("Key was released");
+// })
+
+
+//! Form Events 
+
+let form = document.querySelector("form");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    console.log("Submit");
+    
+
+    let user = this.elements[0];
+    let password = this.elements[1];
+
+    
+    console.log(user.value);
+    console.log(password.value);
+
+    alert(`hiii ${user.value}, your password is set to ${password.value}`);
+}) 
+
+
+
+
