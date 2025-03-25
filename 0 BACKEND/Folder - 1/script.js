@@ -1,6 +1,8 @@
-const Math = require("./Math");
+// const Math = require("./Folder");
 
-console.log(Math); 
+// console.log(Math);
 
-console.log(Math.g);
 
+import {sum,pi} from "./Math";
+
+console.log(sum(1,2));
