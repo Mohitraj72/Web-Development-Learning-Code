@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .modal-parent {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      display: none;
+    }
+    .modal {
+      background: white;
+      width: 70%;
+      padding: 30px;
+      border-radius: 6px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 22px;
+      font-family: arial;
+      position: relative;
+      animation: 0.5s drop;
+    }
+    @keyframes drop {
+      0% {
+        top: -100px;
+      }
+      100% {
+        top: 50%;
+      }
+    }
+    .X {
+      position: absolute;
+      right: 20px;
+      top: 5px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    section {
+      transition: 2s;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: rgba(19, 19, 23, 0.9);
+    }
+    section {
+      background-image: url("modal-background.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      /* filter: blur(6px); */
+    }
+    .center {
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      font-family: sans-serif;
+      margin: 40px;
+      text-transform: capitalize;
+    }
+    button {
+      margin: 0 auto;
+      height: 60px;
+      width: 500px;
+      background: #5454ff;
+      border: none;
+      border-radius: 6px;
+      font-size: 25px;
+      color: #000;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <section>
+      <div class="center">
+        <h1>Click to button below to popup a window</h1>
+        <button type="button">click for modal</button>
+      </div>
+    </section>
+
+    <div class="modal-parent">
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+          quaerat dolor, a et quis at vel laborum deserunt, temporibus illo
+          dignissimos voluptates corporis obcaecati fugit quos eos adipisci
+          illum sunt nemo vero, doloribus accusamus exercitationem asperiores!
+          Architecto delectus consectetur ipsum?
+        </p>
+        <span class="X" draggable="true">&times;</span>
+      </div>
+    </div>
+
+    <script>
+      var parent = document.querySelector(".modal-parent"),
+        btn = document.querySelector("button"),
+        X = document.querySelector(".X"),
+        section = document.querySelector("section");
+
+      btn.addEventListener("click", appear);
+
+      function appear() {
+        parent.style.display = "block";
+        section.style.filter = "blur(10px)";
+      }
+      X.addEventListener("click", disappearX);
+      function disappearX() {
+        parent.style.display = "none";
+        section.style.filter = "blur(0px)";
+      }
+
+      parent.addEventListener("click", disappearParent);
+      function disappearParent(e) {
+        if (e.target.className == "modal-parent") {
+          parent.style.display = "none";
+          section.style.filter = "blur(0px)";
+        }
+      }
+    </script>
+  </body>
+</html>
