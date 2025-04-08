@@ -1,10 +1,16 @@
 import React from "react";
+import Card from "./Components/Card";
 
 
-function App () {
+function App() {
+
   return (
-    <h1>hey </h1>
-  )
+    <div> 
+      <Card></Card>
+      </div>
+      
+
+  );
 }
 
 export default App;
