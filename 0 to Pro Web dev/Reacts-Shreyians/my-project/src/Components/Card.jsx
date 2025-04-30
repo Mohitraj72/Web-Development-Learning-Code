@@ -1,17 +1,57 @@
 import React from "react";
 
 function Card() {
+  const data = [
+    {
+      Image:
+        "https://images.unsplash.com/photo-1633174524827-db00a6b7bc74?q=80&w=896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Amazon Basis",
+      description:
+        "Sale Starts Early from 1st May, Midnight for Prime Members. 10% Instant Discount on HDFC Bank Credit Cards and EasyEMI on Cards.",
+      button: "buy Now",
+    },
+    {
+      Image:
+        "https://images.unsplash.com/photo-1654573817889-296cad084c97?q=80&w=1462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Flipkart ",
+      description:
+        "Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member.",
+      button: "know more",
+    },
+    {
+      Image:
+        "https://images.unsplash.com/photo-1633431406066-27dc4345ca98?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Skype ",
+      description:
+        "Beginning March 2025, you will be able to sign into Microsoft Teams Free with your Skype credentials, and your chats and contacts will be right there ready for ...",
+      button: "show More",
+    },
+  ];
+
   return (
-    <div className="w-full h-screen bg-zinc-200">
-      <div className=" bg-zinc-400 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-md overflow-hidden">
-        <div className="w-full h-32 bg-zinc-300">
-          <img className="w-full h-full object-cover"  src="https://images.unsplash.com/photo-1633174524827-db00a6b7bc74?q=80&w=896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="images" />
+    <div className="w-full h-screen flex items-center justify-center gap-10 flex-initial bg-zinc-200">
+      {data.map((elem, index) => (
+        <div
+          key={index}
+          className="w-52 bg-zinc-100  rounded-md overflow-hidden"
+        >
+          <div className="w-full h-32 bg-zinc-300">
+            <img
+              className="w-full h-full object-cover"
+              src={elem.Image}
+              alt="images"
+            />
+          </div>
+          <div className="w-full px-3 py-4">
+            <h2 className="font-semibold"> {elem.name} </h2>
+            <p className="text-xs mt-3">{elem.description}</p>
+            <button className="px-3 py-1 bg-sky-400 rounded-full mt-4 text-xs">
+              {" "}
+              {elem.button}{" "}
+            </button>
+          </div>
         </div>
-        <div className="w-full px-3 py-4">
-          <h2 className="font-semibold">Amazon Basis </h2>
-          <p className="text-xs mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptatem mi consectetur.</p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }
