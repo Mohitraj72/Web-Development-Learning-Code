@@ -8,7 +8,7 @@ function Card() {
       name: "Amazon Basis",
       description:
         "Sale Starts Early from 1st May, Midnight for Prime Members. 10% Instant Discount on HDFC Bank Credit Cards and EasyEMI on Cards.",
-      button: "buy Now",
+      instock: true,
     },
     {
       Image:
@@ -16,7 +16,7 @@ function Card() {
       name: "Flipkart ",
       description:
         "Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member.",
-      button: "know more",
+      instock: false,
     },
     {
       Image:
@@ -24,7 +24,7 @@ function Card() {
       name: "Skype ",
       description:
         "Beginning March 2025, you will be able to sign into Microsoft Teams Free with your Skype credentials, and your chats and contacts will be right there ready for ...",
-      button: "show More",
+      instock: true,
     },
   ];
 
@@ -45,9 +45,12 @@ function Card() {
           <div className="w-full px-3 py-4">
             <h2 className="font-semibold"> {elem.name} </h2>
             <p className="text-xs mt-3">{elem.description}</p>
-            <button className="px-3 py-1 bg-sky-400 rounded-full mt-4 text-xs">
-              {" "}
-              {elem.button}{" "}
+            <button
+              className={`px-3 py-1 ${
+                elem.instock ? "bg-sky-600" : "bg-red-500"
+              } rounded-full mt-4 text-xs`}
+            >
+              {elem.instock ? "In stock" : "Out of Stock"}
             </button>
           </div>
         </div>
