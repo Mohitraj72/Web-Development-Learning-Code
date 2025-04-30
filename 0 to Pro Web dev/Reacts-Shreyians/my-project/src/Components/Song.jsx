@@ -10,7 +10,7 @@ function Song() {
           mouptas.
         </p>
         <button className="px-2 py-1 bg-blue-400 text-xs font-semibold rounded mt-3 text-zinc-100">
-          Download Now
+          Download Nowasd
         </button>
       </div>
     </div>
