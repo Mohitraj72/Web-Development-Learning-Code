@@ -12,6 +12,8 @@ function Song() {
     },
   ];
 
+  const handleClickDownload = () => {alert("Hey i am good")};
+
   return (
     <div className="w-full h-screen bg-zinc-300 flex flex-col gap-10 justify-center items-center">
       {data.map((item, index) => (
@@ -20,7 +22,7 @@ function Song() {
           <p className="text-xs mt-2">
             {item.description}
           </p>
-          <button className="px-2 py-1 bg-blue-400 text-xs font-semibold rounded mt-3 text-zinc-100">
+          <button onClick={handleClickDownload} className="px-2 py-1 bg-blue-400 text-xs font-semibold rounded mt-3 text-zinc-100">
             Download Now
           </button>
         </div>
