@@ -13,7 +13,7 @@ function Stateadvance() {
           !val.isBanned ? "bg-blue-500" : "bg-red-500"
         } rounded-full text-white `}
         >
-        Change hello 
+        Change hello oo
       </button>
     </div>
   );
