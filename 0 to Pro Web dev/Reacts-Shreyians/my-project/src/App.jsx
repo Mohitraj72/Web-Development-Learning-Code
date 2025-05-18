@@ -4,6 +4,7 @@ import Song from './Components/Song';
 import State from './Components/State';
 import Statea from './Components/Statea';
 import Stateadvance from './Components/StateAdvance';
+import Stateii from './Components/Stateii';
 
 
 
@@ -15,7 +16,9 @@ function App() {
     <div>
      {/* <State/> */}
      {/* <Statea/> */}
-     <Stateadvance/>
+     {/* <Stateadvance/> */}
+     <Stateii/>
+
     </div>
     
   );
