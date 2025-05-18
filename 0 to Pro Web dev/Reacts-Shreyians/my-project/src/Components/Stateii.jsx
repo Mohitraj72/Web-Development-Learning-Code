@@ -10,7 +10,7 @@ function Stateii() {
             await setVal({...val, gender : "male"});
             await console.log(val);
         }}> Click </button>
-    </div>  addaaaa
+    </div>  rtrt
   )
 }
 
