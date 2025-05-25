@@ -6,9 +6,9 @@ function Stateii() {
 
   return (
     <div>
-        <button onClick={async ()=> {
-            await setVal({...val, gender : "male"});
-            await console.log(val);
+        <button onClick={()=> {
+             setVal({...val, gender : "male"});
+             console.log(val);
         }}> Click </button>
     </div> 
   )
