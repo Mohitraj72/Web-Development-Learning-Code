@@ -1,5 +1,6 @@
 import './App.css'
-import EventinReact from "./EventinReact";
+import Clickevent from "./Clickevent";
+import NonClickevent from "./NonClickevent";
 
 function App() {
  
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
       <h1>Hello, I am Mohit raj</h1>
-      <EventinReact/>
+      <Clickevent/>
+      <NonClickevent/>
     </>
   )
 }
