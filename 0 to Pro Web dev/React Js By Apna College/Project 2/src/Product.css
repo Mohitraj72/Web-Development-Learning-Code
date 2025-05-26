@@ -1,0 +1,11 @@
+.Product{
+    /* background-color: #fff; */
+    
+    border:  solid 1px rgb(242, 247, 0);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 0px 5px 0px 5px;
+    color: rgb(255, 255, 255);
+}
+
+

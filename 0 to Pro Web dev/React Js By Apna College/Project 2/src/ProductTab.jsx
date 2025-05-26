@@ -1,16 +1,23 @@
-import React from "react";
 import Product from "./Product";
 
 function ProductTab() {
- 
+
+let style = {
+  display: "flex",
+ flexWrap: "wrap",
+ justifyContent: "center",
+ alignItems: "center",
+ gap: "4px"
+}
 
   return (
-    <>
-      <Product title="Phone" price={53000} />
-
-      <Product title="Laptop" price={30000} />
-      <Product title="pen" price={1000} />
-    </>
+    <div style={style}>
+      
+      <Product title="Logitech  MX Master" idx={0}/>
+      <Product title="Apple Pencil (2nd Gen)"  idx={1}/>
+      <Product title="Zebronics Zeb-transformer" idx={2}/>
+      <Product title="Portnics Toad 23" idx={3}/>
+    </div>
   );
 }
 
