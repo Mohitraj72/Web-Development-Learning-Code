@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deals Page with Countdown Timer</title>
+  <style>
+    :root {
+      --card-width: 160px;
+      --card-height: 200px;
+      --image-height: 120px;
+      --primary-color: #e63946;
+      --part1-bg: #d0ede6;
+      --part2-bg: #d4e4f4;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      padding: 10px 0;
+    }
+
+    .section {
+      padding: 16px 12px;
+      max-width: 100%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      width: 96%;
+      border-radius: 16px;
+    }
+
+    .part-1 {
+      background-color: var(--part1-bg);
+    }
+
+    .part-2 {
+      background-color: var(--part2-bg);
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .timer {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    .timer span {
+      margin: 0 2px;
+    }
+
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 12px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 10px;
+    }
+
+    .slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .slider {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .card {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      background: white;
+      padding: 12px;
+      border-radius: 8px;
+      width: var(--card-width);
+      height: var(--card-height);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+
+    .card:active {
+      transform: scale(0.98);
+    }
+
+    .image-container {
+      width: 100%;
+      height: var(--image-height);
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-image {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      transition: opacity 0.3s ease;
+    }
+
+    .card-image.secondary {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    .card:hover .card-image.primary {
+      opacity: 0;
+    }
+
+    .card:hover .card-image.secondary {
+      opacity: 1;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 8px 0 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-price {
+      font-size: 13px;
+      color: green;
+      font-weight: bold;
+    }
+
+    .card-price::before {
+      content: "From ";
+    }
+
+    /* Popular deals list styles */
+    .popular-deals {
+      list-style-type: none;
+      margin-top: 16px;
+    }
+
+    .popular-deals li {
+      margin-bottom: 16px;
+      padding-left: 12px;
+      border-left: 3px solid var(--primary-color);
+    }
+
+    .deal-name {
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .deal-price-popular {
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (min-width: 768px) {
+      .section {
+        padding: 20px 16px;
+        border-radius: 20px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      .timer {
+        font-size: 18px;
+      }
+
+      .slider {
+        gap: 16px;
+      }
+
+      .card {
+        padding: 14px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      }
+
+      .card-title {
+        font-size: 15px;
+      }
+
+      .card-price {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section part-1">
+    <div class="section-header">
+      <div class="section-title">Selling out fast</div>
+      <div class="timer" id="countdown-timer">
+        <span id="days">00d</span> : 
+        <span id="hours">03h</span> : 
+        <span id="minutes">00m</span> : 
+        <span id="seconds">00s</span>
+      </div>
+    </div>
+    
+    <div class="slider">
+      <div class="card">
+        <div class="image-container">
+          <img src="https://electrikxpert.com/wp-content/uploads/2025/05/51cRXMNWmpL._SL1104_.avif" class="card-image primary" alt="Tablet">
+          <img src="https://electrikxpert.com/wp-content/uploads/2025/04/Buy-L298N-motor-driver-module-online.avif" alt="Tablet alternative view">
+        </div>
+        <div class="card-title">Best-selling tablets</div>
+        <div class="card-price">₹16,749*</div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_UF1000,1000_QL80_.jpg" class="card-image primary" alt="Earbuds">
+          <img src="https://m.media-amazon.com/images/I/71S8U9VzLTL._AC_UF1000,1000_QL80_.jpg" class="card-image secondary" alt="Earbuds alternative view">
+        </div>
+        <div class="card-title">boAt, OnePlus...</div>
+        <div class="card-price">₹699</div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img src="https://m.media-amazon.com/images/I/71WkDpNtYlL._AC_UF1000,1000_QL80_.jpg" class="card-image primary" alt="Laptop">
+          <img src="https://m.media-amazon.com/images/I/71ZSz2cEdTL._AC_UF1000,1000_QL80_.jpg" class="card-image secondary" alt="Laptop alternative view">
+        </div>
+        <div class="card-title">Acer Aspire 3</div>
+        <div class="card-price">₹25,990</div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img src="https://m.media-amazon.com/images/I/61XZQXFQeVL._AC_UF1000,1000_QL80_.jpg" class="card-image primary" alt="Smartwatch">
+          <img src="https://m.media-amazon.com/images/I/61XZQXFQeVL._AC_UF1000,1000_QL80_.jpg" class="card-image secondary" alt="Smartwatch alternative view">
+        </div>
+        <div class="card-title">Smart Watches</div>
+        <div class="card-price">₹1,299</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section part-2">
+    <div class="section-header">
+      <div class="section-title">Most popular deals</div>
+      <div class="timer">
+        <span id="days2">00d</span> : 
+        <span id="hours2">03h</span> : 
+        <span id="minutes2">00m</span> : 
+        <span id="seconds2">00s</span>
+      </div>
+    </div>
+    
+    <ul class="popular-deals">
+      <li>
+        <div class="deal-name">Designer covers</div>
+        <div class="deal-price-popular">From ₹179</div>
+      </li>
+      <li>
+        <div class="deal-name">WiFi printers</div>
+        <div class="deal-price-popular">From ₹6,999</div>
+      </li>
+      <li>
+        <div class="deal-name">Trimmers</div>
+        <div class="deal-price-popular">From ₹499</div>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    // Set the countdown time (3 hours from now)
+    const countDownDate = new Date();
+    countDownDate.setHours(countDownDate.getHours() + 3);
+    
+    // Update the countdown every 1 second
+    const x = setInterval(function() {
+      // Get today's date and time
+      const now = new Date().getTime();
+      
+      // Find the distance between now and the countdown date
+      const distance = countDownDate - now;
+      
+      // Time calculations for days, hours, minutes and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+      // Display the result in both timers
+      document.getElementById("days").innerHTML = days.toString().padStart(2, '0') + "d";
+      document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0') + "h";
+      document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0') + "m";
+      document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0') + "s";
+      
+      document.getElementById("days2").innerHTML = days.toString().padStart(2, '0') + "d";
+      document.getElementById("hours2").innerHTML = hours.toString().padStart(2, '0') + "h";
+      document.getElementById("minutes2").innerHTML = minutes.toString().padStart(2, '0') + "m";
+      document.getElementById("seconds2").innerHTML = seconds.toString().padStart(2, '0') + "s";
+      
+      // If the countdown is finished, clear interval
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
