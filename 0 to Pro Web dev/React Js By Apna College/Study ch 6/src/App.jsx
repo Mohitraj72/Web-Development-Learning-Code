@@ -1,5 +1,6 @@
 import './App.css'
 import Lottery from "./Lottery";
+import Ticket from './Ticket';
 
 function App() {
   
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
      
-      <Lottery/>
+      {/* <Lottery/> */}
+      <Ticket ticket = {[0,1,2]}/>
     </>
   )
 }

@@ -7,8 +7,7 @@ export default function Lottery() {
   let isWinning = sum(ticket) === 15;
   let buyTicket = () => {
     setTicket(genTicket(3));
-  }
-
+  };
 
   return (
     <div>
