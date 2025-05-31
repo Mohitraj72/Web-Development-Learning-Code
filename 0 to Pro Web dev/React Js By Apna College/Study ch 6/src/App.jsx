@@ -1,12 +1,13 @@
-
 import './App.css'
+import Lottery from "./Lottery";
 
 function App() {
   
 
   return (
     <>
-      <h1>Hello Mohit Raj </h1>
+     
+      <Lottery/>
     </>
   )
 }
