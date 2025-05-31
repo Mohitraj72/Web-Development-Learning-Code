@@ -10,6 +10,7 @@ function App() {
      
       {/* <Lottery/> */}
       <Ticket ticket = {[0,1,2]}/>
+      <h2>Helllo </h2>
     </>
   )
 }
